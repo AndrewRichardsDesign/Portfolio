@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet"> -->
+  
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">  -->
+  
+
+
+  <!-- FONTS -->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Prompt:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+
+
+  <link rel="stylesheet" href="/dist/style.css">
+  <title>Andrew Richards</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="body">
+
+
+
+
+
+
+
+ <!-- -----HEADER----- -->
+
+ <header class="header">
+
+
+  <nav id="myNav"
+  class="container"
+  >
+    <a href="/" class="header__logo">
+      <img src="images/logo/Group 111.svg" alt="AR">
+      </a>
+      <div class="header__links">
+        <a href="#project">Projects</a><a href="emptypage.html">About</a><a href="emptypage.html">Contact</a>      
+      </div>
+  </nav>
+  </header>
+
+
+
+
+  
+  
+
+      <section class="hero">
+        <div class="container">
+          <div class="hero__text container--pall">
+            
+            <h1>
+            
+            <mark class="blue">a</mark>ndrew
+            <mark class="blue">r</mark>ichards
+            </h1>
+            
+            <p>
+            native and web ux designer, critical thinker, problem solver<mark class="yellow">.</mark>
+            </p>
+
+
+            <!-- <p>I am a
+              <mark class="blue">native and web ux designer,</mark> 
+              <mark class="orange">critical thinker,</mark>
+              <mark class="purple">and problem solver</mark>
+              <mark class="yellow">.</mark>
+            </p> -->
+              
+
+
+            <!-- <p>
+              native and web ux designer.
+            </p>
+
+            <p>
+              critical thinker.
+            </p>
+            
+            <p id="lastline" >problem solver.</p> -->
+
+
+          </div>
+        </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+      <section class="hero">
+        <div class="container">
+          <div class="hero__text container--pall">
+            
+          
+
+            <p id="companies">where I've worked</p>
+
+            <ul>
+              <li>
+                <a href="https://www.usaa.com/?akredirect=true" id="current" target="_blank">USAA</a>
+              </li>
+
+              <li>
+          
+              <a href="https://design.mit.edu" id="old" target="_blank">MIT Design Lab</a>
+              </li>
+
+              <li>
+              
+              <a href="https://www.innovationbydesign.us/" id="old" target="_blank">Innovation by Design</a>
+              </li>
+
+              <li>
+              
+              <a href="https://www.usa.philips.com/healthcare" id="old" target="_blank">Philips Healthcare</a>
+              </li>
+
+              <li>
+              
+              <a href="https://nth-solutions.com/" id="old" target="_blank">nth Solutions</a>
+              </li>
+
+
+
+            </ul>
+
+            
+          </div>
+        </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- -----PROJECTS----- -->
+
+
+
+
+<div w3-include-html="projects.html" id="project"></div> 
+
+
+
+
+<script>
+  function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /* Loop through a collection of all HTML elements: */
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+      elmnt = z[i];
+      /*search for elements with a certain atrribute:*/
+      file = elmnt.getAttribute("w3-include-html");
+      if (file) {
+        /* Make an HTTP request using the attribute value as the file name: */
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            /* Remove the attribute, and call this function once more: */
+            elmnt.removeAttribute("w3-include-html");
+            includeHTML();
+          }
+        }
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        /* Exit the function: */
+        return;
+      }
+    }
+  }
+  </script> 
+
+
+
+<script>
+  includeHTML();
+  </script> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/app/js/script.js"></script>
+
+
+
+
+
+
+
+
+      </body>
+      </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

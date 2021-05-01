@@ -1,0 +1,62 @@
+.message {
+    // background-color: $darkGray;
+    // background-color: $gray4;
+    background-color: $white;
+    min-height: 100vh;
+    
+    
+    
+        &__text {
+            
+            opacity: 1;
+            // color: white;
+            color: $darkGray;
+            text-align: center;
+    
+    
+             
+    
+            h1 {
+                line-height: 1.15;
+                font-weight: 500;
+                margin-top: 38vh;
+                margin-bottom: .5rem;
+    
+            
+                @include mddown {
+                    font-size: 2rem;
+                }
+    
+                @include sm {
+                    font-size: 2rem;
+                }
+            
+                @include mdup {
+                    font-size: 3rem;
+                }
+            }
+    
+    
+    
+    
+            p {
+                font-weight: 400;
+                line-height: 1.5;
+                margin-top: .5rem;
+    
+                @include mddown {
+                    font-size: 1rem;
+                }
+    
+                @include sm {
+                    font-size: 1rem;
+                }
+            
+                @include mdup {
+                    font-size: 1.5rem;
+                }            
+    
+    
+            }
+        }
+    }
