@@ -250,6 +250,7 @@ a, a:visited, a:hover {
   color: white;
   -webkit-transition: color 150ms ease-in-out;
   transition: color 150ms ease-in-out;
+  border-radius: 8px;
 }
 
 @media (max-width: 568px) {
@@ -327,8 +328,8 @@ a, a:visited, a:hover {
   margin-top: 0rem;
   margin-bottom: 14rem;
   color: #cccccc;
-  margin-left: 30rem;
-  margin-right: 30rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero__text p mark.yellow {
@@ -907,17 +908,23 @@ a, a:visited, a:hover {
 
 .projectpagebody__image {
   display: block;
-  margin-left: auto;
+}
+
+.projectpagebody #test {
+  width: 50rem;
+  margin-left: 5rem;
   margin-right: 5rem;
-  margin-top: 5rem;
+  margin-top: 10rem;
   margin-bottom: 10rem;
 }
 
-@media (max-width: 1105px) {
-  .projectpagebody__image {
+@media (max-width: 1259px) {
+  .projectpagebody #test {
+    width: 40rem;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 }
 
@@ -928,6 +935,7 @@ a, a:visited, a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 5rem;
 }
 
 @media (max-width: 1105px) {
@@ -938,182 +946,20 @@ a, a:visited, a:hover {
   }
 }
 
-.projectpagebody .narrow {
-  display: none;
-}
-
-@media only screen and (max-width: 500px) {
-  .projectpagebody .wide {
-    display: none;
-  }
-  .projectpagebody .narrow {
-    display: block;
-  }
-}
-
-.projectpagebody #image1 {
-  height: 50rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.projectpagebody #image2 {
-  width: 50rem;
-  height: auto;
-  margin-left: 1rem;
-}
-
-@media (max-width: 768px) {
-  .projectpagebody #image2 {
-    width: 30rem;
-    margin-right: 1rem;
-  }
-}
-
-.projectpagebody #image3 {
-  height: 40rem;
-  width: auto;
-  padding-left: 2rem;
-  margin-bottom: 1rem;
-}
-
-@media (max-width: 1105px) {
-  .projectpagebody #image3 {
-    height: 30rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-}
-
-.projectpagebody #image4 {
-  height: 60rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (max-width: 768px) {
-  .projectpagebody #image4 {
-    height: 30rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-}
-
-.projectpagebody #image5 {
-  width: auto;
-  height: 33rem;
-  margin-left: 1rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (max-width: 768px) {
-  .projectpagebody #image5 {
-    width: 30rem;
-    margin-right: 1rem;
-  }
-}
-
-.projectpagebody #image6 {
-  height: 50rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (max-width: 768px) {
-  .projectpagebody #image6 {
-    height: 30rem;
-    margin-right: 1rem;
-  }
-}
-
-.projectpagebody #image7 {
-  width: 30rem;
-  margin-left: 1rem;
-  display: block;
-  margin-right: auto;
-}
-
-@media (max-width: 768px) {
-  .projectpagebody #image7 {
-    height: 30rem;
-    margin-right: 1rem;
-  }
-}
-
-.projectpagebody #image8 {
-  height: 20rem;
-  margin-left: 1rem;
-  display: block;
-  margin-right: auto;
-}
-
-@media (max-width: 768px) {
-  .projectpagebody #image8 {
-    height: 30rem;
-    margin-right: 1rem;
-  }
-}
-
-.projectpagebody #image9 {
-  width: 100rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (max-width: 768px) {
-  .projectpagebody #image9 {
-    height: 30rem;
-    margin-right: 1rem;
-  }
-}
-
-.projectpagebody #image10 {
-  width: 90%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2rem;
-}
-
-@media (max-width: 768px) {
-  .projectpagebody #image10 {
-    height: 30rem;
-    margin-right: 1rem;
-  }
-}
-
-.projectpagebody #image11 {
-  height: 90vh;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.projectpagebody #imagehomepage {
-  width: 50rem;
-  display: block;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .projectpagebody__text {
   font-family: 'Poppins', sans-serif;
   color: white;
-  margin-left: 5rem;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@media (max-width: 1259px) {
+  .projectpagebody__text {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
 }
 
 .projectpagebody__text h1 {
@@ -1194,9 +1040,9 @@ a, a:visited, a:hover {
 }
 
 .projectpagebody .Button:hover {
-  background-color: #edb62c;
-  -webkit-box-shadow: 0px 0px 0px 2px #edb62c inset;
-          box-shadow: 0px 0px 0px 2px #edb62c inset;
+  background-color: #6a80fb;
+  -webkit-box-shadow: 0px 0px 0px 2px #6a80fb inset;
+          box-shadow: 0px 0px 0px 2px #6a80fb inset;
   color: #141414;
 }
 
@@ -1204,40 +1050,6 @@ a, a:visited, a:hover {
   background-color: #ffa200;
   -webkit-box-shadow: 0px 0px 0px 2px #ffa200 inset;
           box-shadow: 0px 0px 0px 2px #ffa200 inset;
-}
-
-.projectpagebody * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.projectpagebody .img-comp-container {
-  position: relative;
-  height: 200px;
-  /*should be the same height as the images*/
-}
-
-.projectpagebody .img-comp-img {
-  position: absolute;
-  width: auto;
-  height: auto;
-  overflow: hidden;
-}
-
-.projectpagebody .img-comp-img img {
-  display: block;
-}
-
-.projectpagebody .img-comp-slider {
-  position: absolute;
-  z-index: 9;
-  cursor: ew-resize;
-  /*set the appearance of the slider:*/
-  width: 40px;
-  height: 40px;
-  background-color: #2196F3;
-  opacity: 0.7;
-  border-radius: 50%;
 }
 
 .message {

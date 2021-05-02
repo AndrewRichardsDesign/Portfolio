@@ -154,23 +154,40 @@
 
     &__image {
         display: block;
-        margin-left: auto;
-        margin-right: 5rem;
-        margin-top: 5rem;
-        margin-bottom: 10rem;
+        
 
 
-        @include lgdown {
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 0rem;
-        }
+        // @include lgdown {
+        //     width: 80%;
+        //     height: 100%;
+        
+            
+        // }
 
 
     }
    
 
+        #test{
+            width: 50rem;
+            margin-left: 5rem;
+            margin-right: 5rem;
+            margin-top: 10rem;
+            margin-bottom: 10rem;
 
+
+        @include lgxldown {
+            width: 40rem;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+
+        }
+
+
+
+        }
 
 
 
@@ -181,6 +198,7 @@
         margin-left: auto;
         margin-right: auto;
         justify-content: center;
+        width: 5rem;
 
 
 
@@ -202,27 +220,27 @@
 
 
 
-    
+    // trying to resize images at different breakpoints
 
-    .narrow{
-        display: none;
 
-     }
+
+    // .narrow{
+    //     display: none;
+
+    //  }
      
 
-     @media only screen and (max-width: 500px){           
+    //  @media only screen and (max-width: 500px){           
          
-        .wide{
-          display: none;
-        }
+    //     .wide{
+    //       display: none;
+    //     }
      
-        .narrow{
-          display: block;
-        }
+    //     .narrow{
+    //       display: block;
+    //     }
 
-     }
-
-
+    //  }
 
 
 
@@ -236,225 +254,214 @@
 
 
 
-    #image1 {
-        height: 50rem;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+
+
+    // #image1 {
+    //     height: 50rem;
+    //     display: block;
+    //     margin-left: auto;
+    //     margin-right: auto;
+    // }
 
 
 
 //used in overview, view types, personalized marketing, external, activity, horizontal scroll and static images
-    #image2 {
-        width: 50rem;
-        height: auto;
-        margin-left: 1rem;
+    // #image2 {
+    //     width: 50rem;
+    //     height: auto;
+    //     margin-left: 1rem;
         
 
         
 
-        @include mddown {
-            width: 30rem;
-            margin-right: 1rem;
-        }
+    //     @include mddown {
+    //         width: 30rem;
+    //         margin-right: 1rem;
+    //     }
 
 
-    }
+    // }
 
 
 //used in responsive images horizontal scroll
-    #image3 {
-        height: 40rem;
-        width: auto;
-        padding-left: 2rem;
-        margin-bottom: 1rem;
-        // justify-content: center;
-        // padding-right: 2rem;
+    // #image3 {
+    //     height: 40rem;
+    //     width: auto;
+    //     padding-left: 2rem;
+    //     margin-bottom: 1rem;
+    //     // justify-content: center;
+    //     // padding-right: 2rem;
         
         
 
-        @include lgdown {
-            height: 30rem;
-            margin-left: 1rem;
-            margin-right: 1rem;
-        }
+    //     @include lgdown {
+    //         height: 30rem;
+    //         margin-left: 1rem;
+    //         margin-right: 1rem;
+    //     }
 
 
-    }
+    // }
 
 
 
-    #image4 {
-        height: 60rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+    // #image4 {
+    //     height: 60rem;
+    //     padding-left: 2rem;
+    //     padding-right: 2rem;
+    //     display: block;
+    //     margin-left: auto;
+    //     margin-right: auto;
         
 
-        @include mddown {
-            height: 30rem;
-            margin-left: 1rem;
-            margin-right: 1rem;
-        }
+    //     @include mddown {
+    //         height: 30rem;
+    //         margin-left: 1rem;
+    //         margin-right: 1rem;
+    //     }
 
 
-    }
-
-
-
-
-    #image5 {
-        width: auto;
-        height: 33rem;
-        // margin-right: 1rem;
-        margin-left: 1rem;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-
-        
-
-        @include mddown {
-            width: 30rem;
-            margin-right: 1rem;
-        }
-
-
-    }
+    // }
 
 
 
 
-    #image6 {
-        height: 50rem;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+    // #image5 {
+    //     width: auto;
+    //     height: 33rem;
+    //     margin-left: 1rem;
+    //     display: block;
+    //     margin-left: auto;
+    //     margin-right: auto;
 
         
 
-        @include mddown {
-            height: 30rem;
-            margin-right: 1rem;
-        }
+    //     @include mddown {
+    //         width: 30rem;
+    //         margin-right: 1rem;
+    //     }
 
 
-    }
+    // }
 
 
 
 
-    #image7 {
-        width: 30rem;
-        margin-left: 1rem;
-        display: block;
-        // margin-left: auto;
-        margin-right: auto;
+    // #image6 {
+    //     height: 50rem;
+    //     display: block;
+    //     margin-left: auto;
+    //     margin-right: auto;
 
         
 
-        @include mddown {
-            height: 30rem;
-            margin-right: 1rem;
-        }
+    //     @include mddown {
+    //         height: 30rem;
+    //         margin-right: 1rem;
+    //     }
 
 
-    }
+    // }
 
 
 
-    #image8 {
-        height: 20rem;
-        margin-left: 1rem;
-        display: block;
-        // margin-left: auto;
-        margin-right: auto;
+
+    // #image7 {
+    //     width: 30rem;
+    //     margin-left: 1rem;
+    //     display: block;
+    //     margin-right: auto;
+
         
 
-        @include mddown {
-            height: 30rem;
-            margin-right: 1rem;
-        }
+    //     @include mddown {
+    //         height: 30rem;
+    //         margin-right: 1rem;
+    //     }
 
 
-    }
-
-
-
-
-    #image9 {
-        width: 100rem;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-
-        @include mddown {
-            height: 30rem;
-            margin-right: 1rem;
-        }
-
-
-    }
+    // }
 
 
 
-
-    #image10 {
-        // width: 80rem;
-        width: 90%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 2rem;
+    // #image8 {
+    //     height: 20rem;
+    //     margin-left: 1rem;
+    //     display: block;
+    //     margin-right: auto;
         
 
-        @include mddown {
-            height: 30rem;
-            margin-right: 1rem;
-        }
+    //     @include mddown {
+    //         height: 30rem;
+    //         margin-right: 1rem;
+    //     }
 
 
-    }
-
-
-
-
-
-    #image11 {
-        height: 90vh;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-
-        // @include mddown {
-        //     height: 30rem;
-        //     margin-right: 1rem;
-        // }
-
-
-    }
+    // }
 
 
 
 
-    #imagehomepage {
-        width: 50rem;
-        display: block;
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-left: auto;
-        margin-right: auto;
+    // #image9 {
+    //     width: 100rem;
+    //     display: block;
+    //     margin-left: auto;
+    //     margin-right: auto;
 
-        // @include mddown {
-        //     height: 30rem;
-        //     margin-right: 1rem;
-        // }
+    //     @include mddown {
+    //         height: 30rem;
+    //         margin-right: 1rem;
+    //     }
 
 
-    }
+    // }
+
+
+
+
+    // #image10 {
+    //     width: 90%;
+    //     display: block;
+    //     margin-left: auto;
+    //     margin-right: auto;
+    //     margin-bottom: 2rem;
+        
+
+    //     @include mddown {
+    //         height: 30rem;
+    //         margin-right: 1rem;
+    //     }
+
+
+    // }
+
+
+
+
+
+    // #image11 {
+    //     height: 90vh;
+    //     display: block;
+    //     margin-left: auto;
+    //     margin-right: auto;
+
+
+
+    // }
+
+
+
+
+    // #imagehomepage {
+    //     width: 50rem;
+    //     display: block;
+    //     margin-top: auto;
+    //     margin-bottom: auto;
+    //     margin-left: auto;
+    //     margin-right: auto;
+
+
+    // }
 
 
 
@@ -463,6 +470,9 @@
 
 
     
+
+
+
 
 
 
@@ -475,15 +485,17 @@
     &__text {
         font-family: 'Poppins', sans-serif;
         color: white;
-        margin-left: 5rem;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 10%;
-        margin-bottom: 10%;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        margin-top: auto;
+        margin-bottom: auto;
         // min-width: 45%;
         
 
-
+        @include lgxldown {
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+        }
 
         @include lgdown {
             // margin-left: 0rem;
@@ -520,11 +532,6 @@
         // margin-right: 5rem;
         margin-top: 1rem;
         }
-
-
-        
-
-
 
     }
 
@@ -621,8 +628,8 @@
     }
 
     .Button:hover {
-        background-color: $yellow5;
-        box-shadow: 0px 0px 0px 2px $yellow5 inset;
+        background-color: $blue;
+        box-shadow: 0px 0px 0px 2px $blue inset;
         color: $darkGray0;
         // font-weight: 400;
         
@@ -646,36 +653,36 @@
 
 
 
-    * {box-sizing: border-box;}
+    // * {box-sizing: border-box;}
 
-    .img-comp-container {
-      position: relative;
-      height: 200px; /*should be the same height as the images*/
-    }
+    // .img-comp-container {
+    //   position: relative;
+    //   height: 200px; /*should be the same height as the images*/
+    // }
     
-    .img-comp-img {
-      position: absolute;
-      width: auto;
-      height: auto;
-      overflow: hidden;
-    }
+    // .img-comp-img {
+    //   position: absolute;
+    //   width: auto;
+    //   height: auto;
+    //   overflow: hidden;
+    // }
     
-    .img-comp-img img {
-      display: block;
-    //   vertical-align: middle;
-    }
+    // .img-comp-img img {
+    //   display: block;
+    // //   vertical-align: middle;
+    // }
     
-    .img-comp-slider {
-      position: absolute;
-      z-index: 9;
-      cursor: ew-resize;
-      /*set the appearance of the slider:*/
-      width: 40px;
-      height: 40px;
-      background-color: #2196F3;
-      opacity: 0.7;
-      border-radius: 50%;
-    }
+    // .img-comp-slider {
+    //   position: absolute;
+    //   z-index: 9;
+    //   cursor: ew-resize;
+    //   /*set the appearance of the slider:*/
+    //   width: 40px;
+    //   height: 40px;
+    //   background-color: #2196F3;
+    //   opacity: 0.7;
+    //   border-radius: 50%;
+    // }
 
 
 
@@ -959,10 +966,6 @@
 //         padding: 0 80px;
 //     }
 // }
-
-
-
-
 
 
 

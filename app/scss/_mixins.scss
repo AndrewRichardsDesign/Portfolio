@@ -15,6 +15,8 @@ $screen-lg-min: 1024px;
 
 $screen-lgdown-max: 1105px;
 
+$screen-lgxldown-max: 1259px;
+
 $screen-xl-min: 1280px;
 
 $screen-xxl-min: 1440px;
@@ -67,6 +69,13 @@ $screen-xxxl-min: 1600px;
     }
  }
  
+
+ @mixin lgxldown {
+    @media (max-width: #{$screen-lgxldown-max}) {
+        @content;
+    }
+ }
+
 
  @mixin xl {
     @media (min-width: #{$screen-xl-min}) {
