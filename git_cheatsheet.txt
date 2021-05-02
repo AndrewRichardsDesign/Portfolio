@@ -4,14 +4,9 @@ git cheat sheet
 
 git status
 	-check the current status of file heirarchy
+git add .
 
 git commit -m "commit message"
-
-git commit -am "<INSERT MESSAGE HERE>" (is this actually git commit -a)
-	-creates a payload or commit with the specified message
-
-git push origin HEAD
-	-pushes to the current branch
 
 git push (if on that branch you wanna push to)
 
@@ -26,6 +21,17 @@ git branch <NEW BRANCH NAME>
 
 git checkout <BRANCH NAME>
 	-change your working branch to this one
+
+
+
+
+
+git commit -am "<INSERT MESSAGE HERE>" (is this actually git commit -a)
+	-creates a payload or commit with the specified message
+
+git push origin HEAD
+	-pushes to the current branch
+
 
 
 
