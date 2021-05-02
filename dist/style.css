@@ -262,7 +262,7 @@ a, a:visited, a:hover {
 .header__links a:hover {
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
-  background-color: #404040;
+  background-color: #262626;
 }
 
 .header__links a:hover::before {
@@ -399,20 +399,16 @@ a, a:visited, a:hover {
 
 .hero__text a {
   color: white;
+  padding: 5px 20px;
+  border-radius: 8px;
 }
 
 .hero__text a:hover {
-  -webkit-text-decoration: underline 3px #6a80fb;
-          text-decoration: underline 3px #6a80fb;
+  background-color: #262626;
 }
 
-.hero__text #old {
-  color: #cccccc;
-}
-
-.hero__text #current {
-  color: #edb62c;
-  font-size: 2rem;
+.hero__text a:active {
+  background-color: #1f1f1f;
 }
 
 .jobs {
