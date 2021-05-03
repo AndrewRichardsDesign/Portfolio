@@ -279,6 +279,7 @@ a, a:visited, a:hover {
 
 .hero {
   background-color: #141414;
+  min-height: 100vh;
 }
 
 .hero__text {
@@ -291,7 +292,7 @@ a, a:visited, a:hover {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   line-height: 1.15;
-  margin-top: 35vh;
+  margin-top: 38vh;
   margin-bottom: .5rem;
 }
 
@@ -320,13 +321,11 @@ a, a:visited, a:hover {
 
 .hero__text p {
   font-family: 'Poppins', sans-serif;
+  color: #cccccc;
   font-weight: 200;
   line-height: 1.5;
-  margin-top: 0rem;
-  margin-bottom: 14rem;
-  color: #cccccc;
   max-width: 50rem;
-  margin: 0 auto;
+  margin: 0rem auto;
 }
 
 .hero__text p mark.yellow {
@@ -352,29 +351,26 @@ a, a:visited, a:hover {
   }
 }
 
-.hero__text #companies {
+.hero__text #companyTitle {
   color: #6a80fb;
   font-weight: 400;
-  margin-top: 10rem;
-  margin-bottom: 0rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
-  .hero__text #companies {
+  .hero__text #companyTitle {
     font-size: 2rem;
   }
 }
 
 @media (max-width: 414px) {
-  .hero__text #companies {
+  .hero__text #companyTitle {
     font-size: 2rem;
   }
 }
 
 @media (min-width: 769px) {
-  .hero__text #companies {
+  .hero__text #companyTitle {
     font-size: 2rem;
   }
 }
@@ -386,6 +382,7 @@ a, a:visited, a:hover {
   line-height: 1.5;
   font-size: 1.75rem;
   margin: 1rem auto 20rem;
+  padding: 0;
 }
 
 .hero__text li {
@@ -946,7 +943,8 @@ a, a:visited, a:hover {
 
 .projectpagebody ul {
   font-size: 1.125rem;
-  margin-top: 3rem;
+  margin: 3rem 10rem;
+  list-style-position: outside;
 }
 
 .projectpagebody li {

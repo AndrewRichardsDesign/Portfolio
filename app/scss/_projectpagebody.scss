@@ -124,7 +124,7 @@
 
 
 
-// for images on project pages
+// for images on home page
 
     &__image {
 
@@ -208,7 +208,9 @@
 
     ul {
         font-size: 1.125rem;
-        margin-top: 3rem;
+        margin: 3rem 10rem;
+        list-style-position: outside;
+
 
       }
 
@@ -277,9 +279,7 @@
         background-color: $blue;
         box-shadow: 0px 0px 0px 2px $blue inset;
         color: $darkGray0;
-        // font-weight: 400;
         
-
     }
 
     .Button:active {
