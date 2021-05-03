@@ -114,14 +114,11 @@ a, a:visited, a:hover {
 }
 
 .container {
-  max-width: 150rem;
   margin: 0 auto;
 }
 
 .container--pall {
-  padding-top: 2.25rem;
   padding-right: 1rem;
-  padding-bottom: 2.25rem;
   padding-left: 1rem;
 }
 
@@ -328,8 +325,8 @@ a, a:visited, a:hover {
   margin-top: 0rem;
   margin-bottom: 14rem;
   color: #cccccc;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 50rem;
+  margin: 0 auto;
 }
 
 .hero__text p mark.yellow {
@@ -388,10 +385,7 @@ a, a:visited, a:hover {
   font-weight: 300;
   line-height: 1.5;
   font-size: 1.75rem;
-  margin-top: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20rem;
+  margin: 1rem auto 20rem;
 }
 
 .hero__text li {
@@ -805,42 +799,21 @@ a, a:visited, a:hover {
   display: -ms-flexbox;
   display: flex;
   margin: 2rem;
+  max-width: 1600px;
   background-color: #1f1f1f;
   border-radius: 2px;
+}
+
+@media (min-width: 1600px) {
+  .projectpagebody__flex {
+    margin: 2rem auto;
+  }
 }
 
 @media (max-width: 1105px) {
   .projectpagebody__flex {
     -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
-  }
-}
-
-@media (max-width: 550px) {
-  .projectpagebody__flex {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-@media (max-width: 414px) {
-  .projectpagebody__flex {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-@media (min-width: 769px) {
-  .projectpagebody__flex {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (min-width: 1280px) {
-  .projectpagebody__flex {
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -878,7 +851,6 @@ a, a:visited, a:hover {
 .projectpagebody .scrolling-wrapper .horizontalrow1 {
   display: inline-block;
   margin-top: 3rem;
-  margin-left: 1rem;
 }
 
 .projectpagebody #h-image {
@@ -908,24 +880,11 @@ a, a:visited, a:hover {
 
 .projectpagebody__image {
   display: block;
+  padding: 5rem 3rem;
 }
 
-.projectpagebody #test {
-  width: 50rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
-}
-
-@media (max-width: 1259px) {
-  .projectpagebody #test {
-    width: 40rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-  }
+.projectpagebody__image img {
+  width: 40rem;
 }
 
 .projectpagebody__image2 {
@@ -986,10 +945,7 @@ a, a:visited, a:hover {
 }
 
 .projectpagebody ul {
-  list-style-position: outside;
-  padding-left: 1rem;
   font-size: 1.125rem;
-  max-width: 50rem;
   margin-top: 3rem;
 }
 

@@ -73,7 +73,9 @@ $screen-xxxl-min: 1600px;
  @mixin lgxldown {
     @media (max-width: #{$screen-lgxldown-max}) {
         @content;
+        
     }
+
  }
 
 
