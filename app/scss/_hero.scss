@@ -6,7 +6,7 @@
 
 .hero {
 background-color: $darkGray0;
-min-height: 100vh;
+min-height: 70vh;
 
 
     &__text {
@@ -21,22 +21,21 @@ min-height: 100vh;
             font-family: 'Poppins', sans-serif;
             font-weight: 400;
             line-height: 1.15;
-            margin-top: 38vh;
+            margin-top: 40vh;
             margin-bottom: .5rem;
 
-        
-            @include mddown {
-                font-size: 3rem;
-            }
-
-            @include sm {
-                font-size: 2.25rem;
-            }
         
             @include mdup {
                 font-size: 7.5rem;
             }
 
+            @include lgxldown {
+                font-size: 4rem;
+            }
+
+            @include mddown {
+                font-size: 2.5rem;
+            }
 
             mark.blue {
                 color:$blue;
@@ -64,17 +63,17 @@ min-height: 100vh;
             }
 
 
-            @include mddown {
-                font-size: 1rem;
-            }
 
-            @include sm {
-                font-size: 1rem;
-            }
-        
             @include mdup {
                 font-size: 2rem;
-            }            
+            }
+
+            @include lgxldown {
+                font-size: 1.25rem;
+            }
+
+            
+        
            
         }
 
@@ -92,17 +91,17 @@ min-height: 100vh;
             margin: 0 auto;
             
 
-            @include mddown {
+            @include mdup {
                 font-size: 2rem;
             }
 
-            @include sm {
-                font-size: 2rem;
+            @include lgxldown {
+                font-size: 1.25rem;
             }
-        
-            @include mdup {
-                font-size: 2rem;
-            }    
+
+            @include mddown {
+                font-size: 1.25rem;
+            }
 
         }
 
@@ -115,10 +114,23 @@ min-height: 100vh;
             list-style-type: none;
             font-weight: 300;
             line-height: 1.5;
-            font-size: 1.75rem;
             margin: 1rem auto 20rem;
             padding: 0;
         
+
+            @include mdup {
+                font-size: 2rem;
+            }
+
+            @include lgxldown {
+                font-size: 1.25rem;
+            }
+
+            @include mddown {
+                font-size: 1.25rem;
+            }
+
+
           }
     
           
