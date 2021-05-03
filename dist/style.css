@@ -1074,7 +1074,7 @@ a, a:visited, a:hover {
   }
 }
 
-@media (max-width: 1105px) {
+@media (max-width: 1259px) {
   .homepageProjects__flex {
     -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
@@ -1087,15 +1087,15 @@ a, a:visited, a:hover {
   color: white;
   margin-left: 4rem;
   margin-right: 4rem;
-  margin-top: auto;
-  margin-bottom: auto;
-  max-width: 65rem;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  max-width: 33%;
 }
 
 @media (max-width: 1259px) {
   .homepageProjects__text {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin: 2rem 2rem;
+    max-width: 80%;
   }
 }
 
@@ -1106,7 +1106,7 @@ a, a:visited, a:hover {
   margin-bottom: 1rem;
 }
 
-@media (max-width: 1105px) {
+@media (max-width: 1259px) {
   .homepageProjects__text h1 {
     margin-top: 1rem;
   }
@@ -1141,11 +1141,24 @@ a, a:visited, a:hover {
 
 .homepageProjects__image {
   display: block;
-  padding: 5rem 3rem;
+  padding: 0% 3%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .homepageProjects__image img {
-  width: 40rem;
+  width: 100%;
+}
+
+@media (max-width: 1259px) {
+  .homepageProjects__image {
+    padding-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .homepageProjects__image img {
+    width: 100%;
+  }
 }
 
 .homepageProjects .Button {
