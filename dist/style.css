@@ -199,6 +199,7 @@ a, a:visited, a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  max-width: 1600px;
   position: fixed;
   top: 0;
   left: 0;
@@ -875,15 +876,6 @@ a, a:visited, a:hover {
   padding-right: 2rem;
 }
 
-.projectpagebody__image {
-  display: block;
-  padding: 5rem 3rem;
-}
-
-.projectpagebody__image img {
-  width: 40rem;
-}
-
 .projectpagebody__image2 {
   display: block;
   margin-left: auto;
@@ -1064,5 +1056,120 @@ a, a:visited, a:hover {
   .message__text p {
     font-size: 1.5rem;
   }
+}
+
+.homepageProjects__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem;
+  max-width: 1600px;
+  background-color: #1f1f1f;
+  border-radius: 2px;
+}
+
+@media (min-width: 1600px) {
+  .homepageProjects__flex {
+    margin: 2rem auto;
+  }
+}
+
+@media (max-width: 1105px) {
+  .homepageProjects__flex {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+}
+
+.homepageProjects__text {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  color: white;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  max-width: 65rem;
+}
+
+@media (max-width: 1259px) {
+  .homepageProjects__text {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+}
+
+.homepageProjects__text h1 {
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1105px) {
+  .homepageProjects__text h1 {
+    margin-top: 1rem;
+  }
+}
+
+.homepageProjects__text h2 {
+  font-weight: 200;
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+  line-height: 1.15;
+  color: #cccccc;
+}
+
+.homepageProjects__text p {
+  font-size: 1.125rem;
+  font-weight: 200;
+  line-height: 1.5;
+  color: #cccccc;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.homepageProjects ul {
+  font-size: 1.125rem;
+  margin: 3rem 10rem;
+  list-style-position: outside;
+}
+
+.homepageProjects li {
+  margin-bottom: 1rem;
+}
+
+.homepageProjects__image {
+  display: block;
+  padding: 5rem 3rem;
+}
+
+.homepageProjects__image img {
+  width: 40rem;
+}
+
+.homepageProjects .Button {
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 0px 2px #cccccc inset;
+          box-shadow: 0px 0px 0px 2px #cccccc inset;
+  cursor: pointer;
+  color: #cccccc;
+  display: inline-block;
+  font-size: 1rem;
+  padding: 16px 32px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.homepageProjects .Button:hover {
+  background-color: #6a80fb;
+  -webkit-box-shadow: 0px 0px 0px 2px #6a80fb inset;
+          box-shadow: 0px 0px 0px 2px #6a80fb inset;
+  color: #141414;
+}
+
+.homepageProjects .Button:active {
+  background-color: #ffa200;
+  -webkit-box-shadow: 0px 0px 0px 2px #ffa200 inset;
+          box-shadow: 0px 0px 0px 2px #ffa200 inset;
 }
 /*# sourceMappingURL=style.css.map */
