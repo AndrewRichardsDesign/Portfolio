@@ -280,7 +280,7 @@ a, a:visited, a:hover {
 
 .hero {
   background-color: #141414;
-  min-height: 100vh;
+  min-height: 70vh;
 }
 
 .hero__text {
@@ -293,25 +293,25 @@ a, a:visited, a:hover {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   line-height: 1.15;
-  margin-top: 38vh;
+  margin-top: 40vh;
   margin-bottom: .5rem;
-}
-
-@media (max-width: 768px) {
-  .hero__text h1 {
-    font-size: 3rem;
-  }
-}
-
-@media (max-width: 414px) {
-  .hero__text h1 {
-    font-size: 2.25rem;
-  }
 }
 
 @media (min-width: 769px) {
   .hero__text h1 {
     font-size: 7.5rem;
+  }
+}
+
+@media (max-width: 1259px) {
+  .hero__text h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__text h1 {
+    font-size: 2.5rem;
   }
 }
 
@@ -334,21 +334,15 @@ a, a:visited, a:hover {
   background: none;
 }
 
-@media (max-width: 768px) {
-  .hero__text p {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 414px) {
-  .hero__text p {
-    font-size: 1rem;
-  }
-}
-
 @media (min-width: 769px) {
   .hero__text p {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 1259px) {
+  .hero__text p {
+    font-size: 1.25rem;
   }
 }
 
@@ -358,21 +352,21 @@ a, a:visited, a:hover {
   margin: 0 auto;
 }
 
-@media (max-width: 768px) {
-  .hero__text #companyTitle {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 414px) {
-  .hero__text #companyTitle {
-    font-size: 2rem;
-  }
-}
-
 @media (min-width: 769px) {
   .hero__text #companyTitle {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 1259px) {
+  .hero__text #companyTitle {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__text #companyTitle {
+    font-size: 1.25rem;
   }
 }
 
@@ -381,9 +375,26 @@ a, a:visited, a:hover {
   list-style-type: none;
   font-weight: 300;
   line-height: 1.5;
-  font-size: 1.75rem;
   margin: 1rem auto 20rem;
   padding: 0;
+}
+
+@media (min-width: 769px) {
+  .hero__text ul {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1259px) {
+  .hero__text ul {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__text ul {
+    font-size: 1.25rem;
+  }
 }
 
 .hero__text li {
@@ -1081,6 +1092,12 @@ a, a:visited, a:hover {
   }
 }
 
+@media (max-width: 768px) {
+  .homepageProjects__flex {
+    margin: 1rem;
+  }
+}
+
 .homepageProjects__text {
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
@@ -1099,29 +1116,65 @@ a, a:visited, a:hover {
   }
 }
 
+@media (max-width: 768px) {
+  .homepageProjects__text {
+    margin: 1rem;
+    max-width: 80%;
+  }
+}
+
 .homepageProjects__text h1 {
   font-weight: 400;
   font-size: 3rem;
   line-height: 1.15;
-  margin-bottom: 1rem;
+  margin-bottom: .75rem;
+}
+
+@media (min-width: 769px) {
+  .homepageProjects__text h1 {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 1259px) {
   .homepageProjects__text h1 {
+    font-size: 2.5rem;
     margin-top: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .homepageProjects__text h1 {
+    font-size: 1.5rem;
   }
 }
 
 .homepageProjects__text h2 {
   font-weight: 200;
   margin-bottom: 2rem;
-  font-size: 1.125rem;
   line-height: 1.15;
   color: #cccccc;
 }
 
+@media (min-width: 769px) {
+  .homepageProjects__text h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 1259px) {
+  .homepageProjects__text h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .homepageProjects__text h2 {
+    font-size: 1rem;
+  }
+}
+
 .homepageProjects__text p {
-  font-size: 1.125rem;
   font-weight: 200;
   line-height: 1.5;
   color: #cccccc;
@@ -1129,14 +1182,22 @@ a, a:visited, a:hover {
   margin-bottom: 2rem;
 }
 
-.homepageProjects ul {
-  font-size: 1.125rem;
-  margin: 3rem 10rem;
-  list-style-position: outside;
+@media (min-width: 769px) {
+  .homepageProjects__text {
+    font-size: 1.25rem;
+  }
 }
 
-.homepageProjects li {
-  margin-bottom: 1rem;
+@media (max-width: 1259px) {
+  .homepageProjects__text {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .homepageProjects__text {
+    font-size: 1rem;
+  }
 }
 
 .homepageProjects__image {
@@ -1168,9 +1229,27 @@ a, a:visited, a:hover {
   cursor: pointer;
   color: #cccccc;
   display: inline-block;
-  font-size: 1rem;
   padding: 16px 32px;
   font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 769px) {
+  .homepageProjects .Button {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 1259px) {
+  .homepageProjects .Button {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .homepageProjects .Button {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .homepageProjects .Button:hover {

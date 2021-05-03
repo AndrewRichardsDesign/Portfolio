@@ -17,6 +17,10 @@
         @include lgxldown {
             flex-wrap: wrap-reverse;
         }
+
+        @include mddown {
+            margin: 1rem;
+        }
             
     }
 
@@ -31,6 +35,8 @@
         color: white;
         margin-left: 4rem;
         margin-right: 4rem;
+        // margin-top: auto;
+        // margin-bottom: auto;
         margin-top: min(10%);
         margin-bottom: min(10%);
         max-width: 33%;
@@ -41,33 +47,70 @@
             max-width: 80%;
         }
 
+        @include mddown {
+            margin: 1rem;
+            max-width: 80%;
+        }
+
         h1 {
             font-weight: 400;
             font-size: 3rem;
             line-height: 1.15;
-            margin-bottom: 1rem;
-        
+            margin-bottom: .75rem;
+
+            @include mdup {
+                font-size: 2.5rem;
+            }
+
             @include lgxldown {
+                font-size: 2.5rem;
                 margin-top: 1rem;
-            } 
+            }
+
+            @include mddown {
+                font-size: 1.5rem;
+            }
+
         }
 
         h2 {
         font-weight: 200;
         margin-bottom: 2rem;
-        font-size: 1.125rem;
         line-height: 1.15;
         color: $gray;
  
+        @include mdup {
+            font-size: 1.25rem;
+        }
+
+        @include lgxldown {
+            font-size: 1.25rem;
+        }
+
+        @include mddown {
+            font-size: 1rem;
+        }
+
         }
 
         p {
-        font-size: 1.125rem;
         font-weight: 200;
         line-height: 1.5;
         color: $gray;
         margin-top: 1rem;
         margin-bottom: 2rem;
+        }
+
+        @include mdup {
+            font-size: 1.25rem;
+        }
+
+        @include lgxldown {
+            font-size: 1.25rem;
+        }
+
+        @include mddown {
+            font-size: 1rem;
         }
     }
 
@@ -75,21 +118,6 @@
 
 
 
-
-
-// companies list
-
-    ul {
-        font-size: 1.125rem;
-        margin: 3rem 10rem;
-        list-style-position: outside;
-
-
-      }
-
-      li{
-        margin-bottom: 1rem;
-      }
 
 
 
@@ -141,10 +169,21 @@
     cursor: pointer;
     color:$gray;            
     display:inline-block;
-    font-size: 1rem;
     padding:16px 32px;
     font-family: 'Poppins', sans-serif;
+    
+    @include mdup {
+        font-size: 1.25rem;
+    }
 
+    @include lgxldown {
+        font-size: 1.25rem;
+    }
+
+    @include mddown {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
     
 }
 
