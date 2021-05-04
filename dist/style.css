@@ -883,10 +883,10 @@ a, a:visited, a:hover {
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   color: white;
-  margin-left: 4rem;
+  margin-left: 3rem;
   margin-right: 4rem;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 3%;
+  margin-bottom: 3%;
   max-width: 33%;
 }
 
@@ -959,6 +959,7 @@ a, a:visited, a:hover {
   line-height: 1.5;
   color: #cccccc;
   margin-top: 1rem;
+  margin-bottom: 0;
 }
 
 @media (min-width: 769px) {
@@ -1044,7 +1045,7 @@ a, a:visited, a:hover {
   border-radius: 8px;
   -webkit-box-shadow: 0px 0px 0px 2px #cccccc inset;
           box-shadow: 0px 0px 0px 2px #cccccc inset;
-  margin-top: 4rem;
+  margin-top: 2rem;
   cursor: pointer;
   color: #cccccc;
   display: inline-block;
