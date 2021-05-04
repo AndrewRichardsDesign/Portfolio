@@ -1,16 +1,18 @@
 .homepageProjects {
 
-
+    
 
     &__flex {
 
         display: flex;
         margin: 2rem;
-        max-width: 1600px;
+        max-width: 1700px;
         background-color: $darkGray1;
         border-radius: 2px;
+
                 
         @include xxxl {
+            margin: 2rem 2rem;
             margin: 2rem auto;
         }
 
@@ -48,7 +50,6 @@
         }
 
         @include mddown {
-            margin: 1rem;
             max-width: 80%;
         }
 
