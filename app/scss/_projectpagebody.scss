@@ -11,14 +11,21 @@
         max-width: 1600px;
         background-color: $darkGray1;
         border-radius: 2px;
-                
+        // box-shadow: inset 1px 0 0 0 $blue;
+
+
         @include xxxl {
             margin: 2rem auto;
         }
 
-        @include lgdown {
+        @include lgxldown {
             flex-wrap: wrap-reverse;
-        }            
+        }
+
+        @include mddown {
+            margin: 1rem;
+        } 
+        
 
 
     }
@@ -69,8 +76,8 @@
         color: white;
         margin-left: 4rem;
         margin-right: 4rem;
-        margin-top: min(10%);
-        margin-bottom: min(10%);
+        margin-top: min(5%);
+        margin-bottom: min(5%);
         max-width: 33%;
         
 
@@ -118,9 +125,9 @@
         // color: white;
  
         font-weight: 200;
-        margin-bottom: 2rem;
         line-height: 1.15;
         color: $gray;
+        margin-bottom: 2rem;
  
         @include mdup {
             font-size: 1.25rem;
@@ -146,7 +153,7 @@
         line-height: 1.5;
         color: $gray;
         margin-top: 1rem;
-        margin-bottom: 2rem;
+        
         
 
         @include mdup {
@@ -193,35 +200,7 @@
         margin-bottom: 1rem;
       }
 
-
     }
-
-
-
-
-
-
-   &__title {
-    font-weight: 400;
-    font-size: 3rem;
-    line-height: 1.15;
-    margin-bottom: 1rem;
-
-    @include lgdown {
-        margin-top: 1rem;
-    }
-
-   }
-
-
-   &__description { 
-    font-size: 1.125rem;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-bottom: 2rem;
-    max-width: 65rem;
-    color: $darkGray;
-   }
 
 
 
@@ -255,46 +234,68 @@
 
 
 
+//    &__title {
+//     font-weight: 400;
+//     font-size: 3rem;
+//     line-height: 1.15;
+//     margin-bottom: 1rem;
+
+//     @include lgdown {
+//         margin-top: 1rem;
+//     }
+
+//    }
+
+
+//    &__description { 
+//     font-size: 1.125rem;
+//     font-weight: 400;
+//     line-height: 1.5;
+//     margin-bottom: 2rem;
+//     max-width: 65rem;
+//     color: $darkGray;
+//    }
 
 
 
 
+.Button {
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px 2px $gray inset;
+    margin-top: 4rem;
+    cursor: pointer;
+    color:$gray;            
+    display:inline-block;
+    padding:16px 32px;
+    font-family: 'Poppins', sans-serif;
+    
+    @include mdup {
+        font-size: 1.25rem;
+    }
 
+    @include lgxldown {
+        font-size: 1.25rem;
+    }
 
-
-
-
-
-
-   .Button {
-        border-radius: 8px;
-        box-shadow: 0px 0px 0px 2px $gray inset;
-        cursor: pointer;
-        color:$white;            
-        display:inline-block;
+    @include mddown {
         font-size: 1rem;
-        padding:16px 32px;
-        font-family: 'Poppins', sans-serif;
-
-        
+        margin-bottom: 1rem;
     }
+    
+}
 
-    .Button:hover {
-        background-color: $blue;
-        box-shadow: 0px 0px 0px 2px $blue inset;
-        color: $darkGray0;
-        
-    }
+.Button:hover {
+    background-color: $blue;
+    box-shadow: 0px 0px 0px 2px $blue inset;
+    color: $white;
+    
+}
 
-    .Button:active {
-        background-color: $yellow4;
-        box-shadow: 0px 0px 0px 2px $yellow4 inset;
-        
-    }
-
-
-
-
+.Button:active {
+    background-color: $blue2;
+    box-shadow: 0px 0px 0px 2px $blue2 inset;
+    
+}
 
 
 
@@ -365,9 +366,36 @@
       
 
 
-    
+// for images on project page
 
-// for images on home page
+
+
+&__image {
+    display: block;
+    // padding: 5rem 3rem;
+    padding: 2% 6.5%;
+    margin-top: auto;
+    margin-bottom: auto;    
+
+
+    img {
+        width: 100%;
+    }
+
+    @include lgxldown{
+        // padding: 4rem auto;
+        padding-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    
+            img {
+                width: 100%;
+                // padding-top: 2rem;
+            }
+        }
+}
+
+
 
     // &__image {
 

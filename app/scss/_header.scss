@@ -68,12 +68,12 @@
         a {
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
-        font-size: $font-sm-med; 
+        font-size: 1rem;
         position: relative;
         padding: 32px 24px 32px 24px;
         color: white;
         transition: color 150ms ease-in-out;
-        border-radius: 8px;
+        // border-radius: 8px;
             
         
 
@@ -90,7 +90,8 @@
 
           &:hover {
             transition: all 100ms ease-in-out;
-            background-color: $darkGray;
+            // background-color: $darkGray;
+            background-color: $blue;
 
 
 

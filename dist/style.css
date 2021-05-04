@@ -247,7 +247,6 @@ a, a:visited, a:hover {
   color: white;
   -webkit-transition: color 150ms ease-in-out;
   transition: color 150ms ease-in-out;
-  border-radius: 8px;
 }
 
 @media (max-width: 568px) {
@@ -260,7 +259,7 @@ a, a:visited, a:hover {
 .header__links a:hover {
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
-  background-color: #262626;
+  background-color: #6a80fb;
 }
 
 .header__links a:hover::before {
@@ -851,10 +850,16 @@ a, a:visited, a:hover {
   }
 }
 
-@media (max-width: 1105px) {
+@media (max-width: 1259px) {
   .projectpagebody__flex {
     -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
+  }
+}
+
+@media (max-width: 768px) {
+  .projectpagebody__flex {
+    margin: 1rem;
   }
 }
 
@@ -880,8 +885,8 @@ a, a:visited, a:hover {
   color: white;
   margin-left: 4rem;
   margin-right: 4rem;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   max-width: 33%;
 }
 
@@ -926,9 +931,9 @@ a, a:visited, a:hover {
 
 .projectpagebody__text h2 {
   font-weight: 200;
-  margin-bottom: 2rem;
   line-height: 1.15;
   color: #cccccc;
+  margin-bottom: 2rem;
 }
 
 @media (min-width: 769px) {
@@ -954,7 +959,6 @@ a, a:visited, a:hover {
   line-height: 1.5;
   color: #cccccc;
   margin-top: 1rem;
-  margin-bottom: 2rem;
 }
 
 @media (min-width: 769px) {
@@ -1006,28 +1010,6 @@ a, a:visited, a:hover {
   margin-bottom: 1rem;
 }
 
-.projectpagebody__title {
-  font-weight: 400;
-  font-size: 3rem;
-  line-height: 1.15;
-  margin-bottom: 1rem;
-}
-
-@media (max-width: 1105px) {
-  .projectpagebody__title {
-    margin-top: 1rem;
-  }
-}
-
-.projectpagebody__description {
-  font-size: 1.125rem;
-  font-weight: 400;
-  line-height: 1.5;
-  margin-bottom: 2rem;
-  max-width: 65rem;
-  color: #262626;
-}
-
 .projectpagebody #centeredsection {
   margin: 5rem auto;
   background-color: #141414;
@@ -1062,25 +1044,44 @@ a, a:visited, a:hover {
   border-radius: 8px;
   -webkit-box-shadow: 0px 0px 0px 2px #cccccc inset;
           box-shadow: 0px 0px 0px 2px #cccccc inset;
+  margin-top: 4rem;
   cursor: pointer;
-  color: white;
+  color: #cccccc;
   display: inline-block;
-  font-size: 1rem;
   padding: 16px 32px;
   font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 769px) {
+  .projectpagebody .Button {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 1259px) {
+  .projectpagebody .Button {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .projectpagebody .Button {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .projectpagebody .Button:hover {
   background-color: #6a80fb;
   -webkit-box-shadow: 0px 0px 0px 2px #6a80fb inset;
           box-shadow: 0px 0px 0px 2px #6a80fb inset;
-  color: #141414;
+  color: white;
 }
 
 .projectpagebody .Button:active {
-  background-color: #ffa200;
-  -webkit-box-shadow: 0px 0px 0px 2px #ffa200 inset;
-          box-shadow: 0px 0px 0px 2px #ffa200 inset;
+  background-color: #3855fa;
+  -webkit-box-shadow: 0px 0px 0px 2px #3855fa inset;
+          box-shadow: 0px 0px 0px 2px #3855fa inset;
 }
 
 .projectpagebody .scrolling-wrapper {
@@ -1119,6 +1120,28 @@ a, a:visited, a:hover {
 .projectpagebody #h-image2 {
   height: 30rem;
   padding-right: 2rem;
+}
+
+.projectpagebody__image {
+  display: block;
+  padding: 2% 6.5%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.projectpagebody__image img {
+  width: 100%;
+}
+
+@media (max-width: 1259px) {
+  .projectpagebody__image {
+    padding-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .projectpagebody__image img {
+    width: 100%;
+  }
 }
 
 .projectpagebody__image2 {
@@ -1211,7 +1234,6 @@ a, a:visited, a:hover {
 
 @media (min-width: 1700px) {
   .homepageProjects__flex {
-    margin: 2rem 2rem;
     margin: 2rem auto;
   }
 }
@@ -1281,7 +1303,7 @@ a, a:visited, a:hover {
 
 .homepageProjects__text h2 {
   font-weight: 200;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   line-height: 1.15;
   color: #cccccc;
 }
@@ -1309,7 +1331,7 @@ a, a:visited, a:hover {
   line-height: 1.5;
   color: #cccccc;
   margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 @media (min-width: 769px) {
@@ -1386,7 +1408,7 @@ a, a:visited, a:hover {
   background-color: #6a80fb;
   -webkit-box-shadow: 0px 0px 0px 2px #6a80fb inset;
           box-shadow: 0px 0px 0px 2px #6a80fb inset;
-  color: #141414;
+  color: white;
 }
 
 .homepageProjects .Button:active {
