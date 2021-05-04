@@ -21,7 +21,7 @@
     #myNav {
         display: flex;
         flex-direction: row;
-        max-width: 1600px;
+        max-width: 1700px;
         position: fixed;
         top: 0;
         left: 0;
@@ -29,7 +29,7 @@
         z-index: 2;
         transition: transform .3s cubic-bezier(0.86, 0, 0.07, 1);
         background-color: $darkGray0;
-        padding: 16px 0px 16px 20px;
+        padding: 16px 0px 16px 24px;
         align-items: center;
         justify-content: space-between;
 
@@ -39,7 +39,7 @@
         @include smmed {
             flex-direction: column;
             justify-content: center;
-            padding: 20px 5px 10px 5px;
+            padding: 10px 5px 10px 5px;
 
         }   
     }
@@ -52,7 +52,6 @@
     
         img {
             margin-top: .5rem;
-            margin-left: 1rem;
             width: 50px;
             height: auto;
             
@@ -69,12 +68,12 @@
         a {
         font-family: 'Poppins', sans-serif;
         font-weight: 400;
-        font-size: $font-sm-med; 
+        font-size: 1rem;
         position: relative;
         padding: 32px 24px 32px 24px;
         color: white;
         transition: color 150ms ease-in-out;
-        border-radius: 8px;
+        // border-radius: 8px;
             
         
 
@@ -91,7 +90,8 @@
 
           &:hover {
             transition: all 100ms ease-in-out;
-            background-color: $darkGray;
+            // background-color: $darkGray;
+            background-color: $blue;
 
 
 

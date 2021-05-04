@@ -1,14 +1,15 @@
 .homepageProjects {
 
-
+    
 
     &__flex {
 
         display: flex;
         margin: 2rem;
-        max-width: 1600px;
+        max-width: 1700px;
         background-color: $darkGray1;
         border-radius: 2px;
+
                 
         @include xxxl {
             margin: 2rem auto;
@@ -48,7 +49,6 @@
         }
 
         @include mddown {
-            margin: 1rem;
             max-width: 80%;
         }
 
@@ -75,7 +75,7 @@
 
         h2 {
         font-weight: 200;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         line-height: 1.15;
         color: $gray;
  
@@ -98,7 +98,7 @@
         line-height: 1.5;
         color: $gray;
         margin-top: 1rem;
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
         }
 
         @include mdup {
@@ -132,7 +132,7 @@
 &__image {
     display: block;
     // padding: 5rem 3rem;
-    padding: 0% 3%;
+    padding: 0% 6.5%;
     margin-top: auto;
     margin-bottom: auto;    
 
@@ -190,13 +190,13 @@
 .Button:hover {
     background-color: $blue;
     box-shadow: 0px 0px 0px 2px $blue inset;
-    color: $darkGray0;
+    color: $white;
     
 }
 
 .Button:active {
-    background-color: $yellow4;
-    box-shadow: 0px 0px 0px 2px $yellow4 inset;
+    background-color: $blue2;
+    box-shadow: 0px 0px 0px 2px $blue2 inset;
     
 }
 

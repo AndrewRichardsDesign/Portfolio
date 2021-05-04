@@ -11,20 +11,27 @@
         max-width: 1600px;
         background-color: $darkGray1;
         border-radius: 2px;
-                
+        // box-shadow: inset 1px 0 0 0 $blue;
+
+
         @include xxxl {
             margin: 2rem auto;
         }
 
-        @include lgdown {
+        @include lgxldown {
             flex-wrap: wrap-reverse;
         }
-            
+
+        @include mddown {
+            margin: 1rem;
+        } 
+        
+
+
     }
 
 
-
-
+    
 
 
     &__flex2 {
@@ -40,13 +47,6 @@
 
 
 
-
-    #centeredsection{
-    justify-content: center;
-    background-color: $gray3;
-    }
-
-
     #projectsubpage{
     justify-content: center;
      background-color: $gray3;
@@ -55,6 +55,263 @@
 
 
    
+
+
+
+    &__text {
+        // font-family: 'Poppins', sans-serif;
+        // color: white;
+        // margin-left: 4rem;
+        // margin-right: 4rem;
+        // margin-top: auto;
+        // margin-bottom: auto;
+
+        // @include lgxldown {
+        //     margin-top: 5rem;
+        //     margin-bottom: 5rem;
+        // }
+
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.5;
+        color: white;
+        margin-left: 4rem;
+        margin-right: 4rem;
+        margin-top: min(5%);
+        margin-bottom: min(5%);
+        max-width: 33%;
+        
+
+        @include lgxldown {
+            margin: 2rem 2rem;
+            max-width: 80%;
+        }
+
+        @include mddown {
+            max-width: 80%;
+        }
+
+
+        h1 {
+        // font-weight: 400;
+        // font-size: 2rem;
+        // line-height: 1.15;
+        // font-weight: 500;
+
+        font-weight: 400;
+        font-size: 3rem;
+        line-height: 1.15;
+        margin-bottom: .75rem;
+
+        @include mdup {
+            font-size: 2.5rem;
+        }
+
+        @include lgxldown {
+            font-size: 2.5rem;
+            margin-top: 1rem;
+        }
+
+        @include mddown {
+            font-size: 1.5rem;
+        }
+
+        }
+
+        h2 {
+        // font-weight: 200;
+        // margin-bottom: 2rem;
+        // font-size: 1.125rem;
+        // line-height: 1.15;
+        // color: white;
+ 
+        font-weight: 200;
+        line-height: 1.15;
+        color: $gray;
+        margin-bottom: 2rem;
+ 
+        @include mdup {
+            font-size: 1.25rem;
+        }
+
+        @include lgxldown {
+            font-size: 1.25rem;
+        }
+
+        @include mddown {
+            font-size: 1rem;
+        }
+
+        }
+
+        p {
+        // font-size: 1.125rem;
+        // font-weight: 200;
+        // line-height: 1.5;
+        // color: white;
+        // margin-top: 1rem;
+        font-weight: 200;
+        line-height: 1.5;
+        color: $gray;
+        margin-top: 1rem;
+        
+        
+
+        @include mdup {
+            font-size: 1.25rem;
+        }
+
+        @include lgxldown {
+            font-size: 1.25rem;
+        }
+
+        @include mddown {
+            font-size: 1rem;
+        }
+
+        }
+    
+
+    ul {
+        // font-size: 1.125rem;
+        // margin: 3rem 10rem;
+        list-style-position: outside;
+        font-weight: 200;
+        line-height: 1.5;
+        color: $gray;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        
+
+        @include mdup {
+            font-size: 1.25rem;
+        }
+
+        @include lgxldown {
+            font-size: 1.25rem;
+        }
+
+        @include mddown {
+            font-size: 1rem;
+        }
+
+      }
+
+      li{
+        margin-bottom: 1rem;
+      }
+
+    }
+
+
+
+   #centeredsection{
+       margin: 5rem auto;
+       background-color: $darkGray0;
+       justify-content: center;
+    //    max-width: 70%;
+    
+       @include mdup {
+        max-width: 70%;
+        }
+
+        @include lgxldown {
+            max-width: 90%;
+        }
+
+        @include mddown {
+            max-width: 95%;
+        }
+
+
+   }
+
+   #endofsection{
+       margin-bottom: 5rem;
+   }
+
+
+
+
+
+
+//    &__title {
+//     font-weight: 400;
+//     font-size: 3rem;
+//     line-height: 1.15;
+//     margin-bottom: 1rem;
+
+//     @include lgdown {
+//         margin-top: 1rem;
+//     }
+
+//    }
+
+
+//    &__description { 
+//     font-size: 1.125rem;
+//     font-weight: 400;
+//     line-height: 1.5;
+//     margin-bottom: 2rem;
+//     max-width: 65rem;
+//     color: $darkGray;
+//    }
+
+
+
+
+.Button {
+    border-radius: 8px;
+    box-shadow: 0px 0px 0px 2px $gray inset;
+    margin-top: 4rem;
+    cursor: pointer;
+    color:$gray;            
+    display:inline-block;
+    padding:16px 32px;
+    font-family: 'Poppins', sans-serif;
+    
+    @include mdup {
+        font-size: 1.25rem;
+    }
+
+    @include lgxldown {
+        font-size: 1.25rem;
+    }
+
+    @include mddown {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+}
+
+.Button:hover {
+    background-color: $blue;
+    box-shadow: 0px 0px 0px 2px $blue inset;
+    color: $white;
+    
+}
+
+.Button:active {
+    background-color: $blue2;
+    box-shadow: 0px 0px 0px 2px $blue2 inset;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     .scrolling-wrapper {
@@ -75,14 +332,11 @@
       }
     
 
-
-
       #h-image {
         height: 30rem;
         padding-right: 2rem;
 
     }
-
 
 
       .scrolling-wrapper2 {
@@ -104,7 +358,6 @@
       }
 
 
-
       #h-image2 {
         height: 30rem;
         padding-right: 2rem;
@@ -113,18 +366,36 @@
       
 
 
+// for images on project page
+
+
+
+&__image {
+    display: block;
+    // padding: 5rem 3rem;
+    padding: 2% 6.5%;
+    margin-top: auto;
+    margin-bottom: auto;    
+
+
+    img {
+        width: 100%;
+    }
+
+    @include lgxldown{
+        // padding: 4rem auto;
+        padding-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
     
+            img {
+                width: 100%;
+                // padding-top: 2rem;
+            }
+        }
+}
 
 
-
-
-
-
-
-
-
-
-// for images on home page
 
     // &__image {
 
@@ -137,8 +408,6 @@
 
     // }
    
-
-
 
 
 
@@ -161,134 +430,6 @@
         }
 
     }
-
-
-
-
-
-
-
-    &__text {
-        font-family: 'Poppins', sans-serif;
-        color: white;
-        margin-left: 4rem;
-        margin-right: 4rem;
-        margin-top: auto;
-        margin-bottom: auto;
-
-        @include lgxldown {
-            margin-top: 5rem;
-            margin-bottom: 5rem;
-        }
-
-        h1 {
-        font-weight: 400;
-        font-size: 2rem;
-        line-height: 1.15;
-        font-weight: 500;
-        }
-
-        h2 {
-        font-weight: 200;
-        margin-bottom: 2rem;
-        font-size: 1.125rem;
-        line-height: 1.15;
-        color: white;
- 
-        }
-
-        p {
-        font-size: 1.125rem;
-        font-weight: 200;
-        line-height: 1.5;
-        color: white;
-        margin-top: 1rem;
-        }
-    }
-
-    ul {
-        font-size: 1.125rem;
-        margin: 3rem 10rem;
-        list-style-position: outside;
-
-
-      }
-
-      li{
-        margin-bottom: 1rem;
-      }
-
-
-   &__title {
-    font-weight: 400;
-    font-size: 3rem;
-    line-height: 1.15;
-    margin-bottom: 1rem;
-
-    @include lgdown {
-        margin-top: 1rem;
-    }
-
-   }
-
-
-   &__description { 
-    font-size: 1.125rem;
-    font-weight: 400;
-    line-height: 1.5;
-    margin-bottom: 2rem;
-    max-width: 65rem;
-    color: $darkGray;
-   }
-
-
-
-
-
-
-   #topofsection{
-       margin-top: 5rem;
-   }
-
-   #endofsection{
-       margin-bottom: 5rem;
-   }
-
-
-
-
-
-
-
-
-
-   .Button {
-        border-radius: 8px;
-        box-shadow: 0px 0px 0px 2px $gray inset;
-        cursor: pointer;
-        color:$white;            
-        display:inline-block;
-        font-size: 1rem;
-        padding:16px 32px;
-        font-family: 'Poppins', sans-serif;
-
-        
-    }
-
-    .Button:hover {
-        background-color: $blue;
-        box-shadow: 0px 0px 0px 2px $blue inset;
-        color: $darkGray0;
-        
-    }
-
-    .Button:active {
-        background-color: $yellow4;
-        box-shadow: 0px 0px 0px 2px $yellow4 inset;
-        
-    }
-
-
 
 
 
