@@ -18,13 +18,13 @@
 
         @include lgdown {
             flex-wrap: wrap-reverse;
-        }
-            
+        }            
+
+
     }
 
 
-
-
+    
 
 
     &__flex2 {
@@ -40,13 +40,6 @@
 
 
 
-
-    #centeredsection{
-    justify-content: center;
-    background-color: $gray3;
-    }
-
-
     #projectsubpage{
     justify-content: center;
      background-color: $gray3;
@@ -57,166 +50,155 @@
    
 
 
-    .scrolling-wrapper {
-        overflow-x: scroll;
-        overflow-y: hidden;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-        margin-right: 1rem;
-
-      
-        .horizontalrow1 {
-          display: inline-block;
-          margin-top: 3rem;
-        //   margin-left: 1rem;
-          
-
-        }
-      }
-    
-
-
-
-      #h-image {
-        height: 30rem;
-        padding-right: 2rem;
-
-    }
-
-
-
-      .scrolling-wrapper2 {
-        overflow-x: scroll;
-        overflow-y: hidden;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-        margin-bottom: 5rem;
-
-      
-        .horizontalrow2 {
-          display: inline-block;
-          margin-top: 3rem;
-          margin-left: auto;
-          margin-right: auto;
-
-
-        }
-      }
-
-
-
-      #h-image2 {
-        height: 30rem;
-        padding-right: 2rem;
-    }
-
-      
-
-
-    
-
-
-
-
-
-
-
-
-
-
-// for images on home page
-
-    // &__image {
-
-    //     display: block;
-    //     padding: 5rem 3rem;
-
-    //     img {
-    //         width: 40rem;
-    //     }
-
-    // }
-   
-
-
-
-
-
-
-// for images on project sub pages
-
-    &__image2 {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center;
-        width: 5rem;
-
-
-
-        @include lgdown {
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 0rem;
-        }
-
-    }
-
-
-
-
-
-
 
     &__text {
+        // font-family: 'Poppins', sans-serif;
+        // color: white;
+        // margin-left: 4rem;
+        // margin-right: 4rem;
+        // margin-top: auto;
+        // margin-bottom: auto;
+
+        // @include lgxldown {
+        //     margin-top: 5rem;
+        //     margin-bottom: 5rem;
+        // }
+
         font-family: 'Poppins', sans-serif;
+        line-height: 1.5;
         color: white;
         margin-left: 4rem;
         margin-right: 4rem;
-        margin-top: auto;
-        margin-bottom: auto;
+        margin-top: min(10%);
+        margin-bottom: min(10%);
+        max-width: 33%;
+        
 
         @include lgxldown {
-            margin-top: 5rem;
-            margin-bottom: 5rem;
+            margin: 2rem 2rem;
+            max-width: 80%;
         }
 
+        @include mddown {
+            max-width: 80%;
+        }
+
+
         h1 {
+        // font-weight: 400;
+        // font-size: 2rem;
+        // line-height: 1.15;
+        // font-weight: 500;
+
         font-weight: 400;
-        font-size: 2rem;
+        font-size: 3rem;
         line-height: 1.15;
-        font-weight: 500;
+        margin-bottom: .75rem;
+
+        @include mdup {
+            font-size: 2.5rem;
+        }
+
+        @include lgxldown {
+            font-size: 2.5rem;
+            margin-top: 1rem;
+        }
+
+        @include mddown {
+            font-size: 1.5rem;
+        }
+
         }
 
         h2 {
+        // font-weight: 200;
+        // margin-bottom: 2rem;
+        // font-size: 1.125rem;
+        // line-height: 1.15;
+        // color: white;
+ 
         font-weight: 200;
         margin-bottom: 2rem;
-        font-size: 1.125rem;
         line-height: 1.15;
-        color: white;
+        color: $gray;
  
+        @include mdup {
+            font-size: 1.25rem;
+        }
+
+        @include lgxldown {
+            font-size: 1.25rem;
+        }
+
+        @include mddown {
+            font-size: 1rem;
+        }
+
         }
 
         p {
-        font-size: 1.125rem;
+        // font-size: 1.125rem;
+        // font-weight: 200;
+        // line-height: 1.5;
+        // color: white;
+        // margin-top: 1rem;
         font-weight: 200;
         line-height: 1.5;
-        color: white;
+        color: $gray;
         margin-top: 1rem;
+        margin-bottom: 2rem;
+        
+
+        @include mdup {
+            font-size: 1.25rem;
         }
-    }
+
+        @include lgxldown {
+            font-size: 1.25rem;
+        }
+
+        @include mddown {
+            font-size: 1rem;
+        }
+
+        }
+    
 
     ul {
-        font-size: 1.125rem;
-        margin: 3rem 10rem;
+        // font-size: 1.125rem;
+        // margin: 3rem 10rem;
         list-style-position: outside;
+        font-weight: 200;
+        line-height: 1.5;
+        color: $gray;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        
 
+        @include mdup {
+            font-size: 1.25rem;
+        }
+
+        @include lgxldown {
+            font-size: 1.25rem;
+        }
+
+        @include mddown {
+            font-size: 1rem;
+        }
 
       }
 
       li{
         margin-bottom: 1rem;
       }
+
+
+    }
+
+
+
+
 
 
    &__title {
@@ -243,16 +225,38 @@
 
 
 
+   #centeredsection{
+       margin: 5rem auto;
+       background-color: $darkGray0;
+       justify-content: center;
+    //    max-width: 70%;
+    
+       @include mdup {
+        max-width: 70%;
+        }
+
+        @include lgxldown {
+            max-width: 90%;
+        }
+
+        @include mddown {
+            max-width: 95%;
+        }
 
 
-
-   #topofsection{
-       margin-top: 5rem;
    }
 
    #endofsection{
        margin-bottom: 5rem;
    }
+
+
+
+
+
+
+
+
 
 
 
@@ -289,6 +293,115 @@
     }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .scrolling-wrapper {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        margin-right: 1rem;
+
+      
+        .horizontalrow1 {
+          display: inline-block;
+          margin-top: 3rem;
+        //   margin-left: 1rem;
+          
+
+        }
+      }
+    
+
+      #h-image {
+        height: 30rem;
+        padding-right: 2rem;
+
+    }
+
+
+      .scrolling-wrapper2 {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        margin-bottom: 5rem;
+
+      
+        .horizontalrow2 {
+          display: inline-block;
+          margin-top: 3rem;
+          margin-left: auto;
+          margin-right: auto;
+
+
+        }
+      }
+
+
+      #h-image2 {
+        height: 30rem;
+        padding-right: 2rem;
+    }
+
+      
+
+
+    
+
+// for images on home page
+
+    // &__image {
+
+    //     display: block;
+    //     padding: 5rem 3rem;
+
+    //     img {
+    //         width: 40rem;
+    //     }
+
+    // }
+   
+
+
+
+
+// for images on project sub pages
+
+    &__image2 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        width: 5rem;
+
+
+
+        @include lgdown {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 0rem;
+        }
+
+    }
 
 
 
