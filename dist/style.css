@@ -682,18 +682,19 @@ a, a:visited, a:hover {
   display: -ms-flexbox;
   display: flex;
   background-color: #6a80fb;
+  margin-bottom: 8rem;
 }
 
 .projectpageheader__text {
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   color: white;
-  margin: 20vh 2rem 3rem;
+  margin: 15rem 2rem 3rem;
 }
 
 @media (max-width: 1259px) {
   .projectpageheader__text {
-    margin: 20vh 1rem 2rem;
+    margin: 10rem 1rem 2rem;
   }
 }
 
@@ -930,7 +931,7 @@ a, a:visited, a:hover {
 }
 
 .projectpagebody__text h2 {
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.15;
   color: #cccccc;
   margin-bottom: 2rem;
@@ -955,7 +956,7 @@ a, a:visited, a:hover {
 }
 
 .projectpagebody__text p {
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.5;
   color: #cccccc;
   margin-top: 1rem;
@@ -1012,7 +1013,7 @@ a, a:visited, a:hover {
 }
 
 .projectpagebody #centeredsection {
-  margin: 5rem auto;
+  margin: 0rem auto 4rem;
   background-color: #141414;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1051,6 +1052,7 @@ a, a:visited, a:hover {
   display: inline-block;
   padding: 16px 32px;
   font-family: 'Poppins', sans-serif;
+  font-weight: 300;
 }
 
 @media (min-width: 769px) {
@@ -1080,9 +1082,9 @@ a, a:visited, a:hover {
 }
 
 .projectpagebody .Button:active {
-  background-color: #3855fa;
-  -webkit-box-shadow: 0px 0px 0px 2px #3855fa inset;
-          box-shadow: 0px 0px 0px 2px #3855fa inset;
+  background-color: #6a80fb;
+  -webkit-box-shadow: 0px 0px 0px 2px #6a80fb inset;
+          box-shadow: 0px 0px 0px 2px #6a80fb inset;
 }
 
 .projectpagebody .scrolling-wrapper {
@@ -1125,7 +1127,7 @@ a, a:visited, a:hover {
 
 .projectpagebody__image {
   display: block;
-  padding: 2% 6.5%;
+  padding: 2% 2%;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -1136,7 +1138,7 @@ a, a:visited, a:hover {
 
 @media (max-width: 1259px) {
   .projectpagebody__image {
-    padding-top: 2rem;
+    padding-top: 2%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1303,7 +1305,7 @@ a, a:visited, a:hover {
 }
 
 .homepageProjects__text h2 {
-  font-weight: 200;
+  font-weight: 300;
   margin-bottom: 1rem;
   line-height: 1.15;
   color: #cccccc;
@@ -1328,7 +1330,7 @@ a, a:visited, a:hover {
 }
 
 .homepageProjects__text p {
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.5;
   color: #cccccc;
   margin-top: 1rem;
@@ -1384,6 +1386,7 @@ a, a:visited, a:hover {
   display: inline-block;
   padding: 16px 32px;
   font-family: 'Poppins', sans-serif;
+  font-weight: 300;
 }
 
 @media (min-width: 769px) {
@@ -1413,8 +1416,8 @@ a, a:visited, a:hover {
 }
 
 .homepageProjects .Button:active {
-  background-color: #3855fa;
-  -webkit-box-shadow: 0px 0px 0px 2px #3855fa inset;
-          box-shadow: 0px 0px 0px 2px #3855fa inset;
+  background-color: #6a80fb;
+  -webkit-box-shadow: 0px 0px 0px 2px #6a80fb inset;
+          box-shadow: 0px 0px 0px 2px #6a80fb inset;
 }
 /*# sourceMappingURL=style.css.map */
