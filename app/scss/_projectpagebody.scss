@@ -74,10 +74,11 @@
         font-family: 'Poppins', sans-serif;
         line-height: 1.5;
         color: white;
-        margin-left: 4rem;
+        margin-left: 3rem;
         margin-right: 4rem;
-        margin-top: min(5%);
-        margin-bottom: min(5%);
+        // padding: 10% 2%;
+        margin-top: min(3%);
+        margin-bottom: min(3%);
         max-width: 33%;
         
 
@@ -102,6 +103,7 @@
         line-height: 1.15;
         margin-bottom: .75rem;
 
+
         @include mdup {
             font-size: 2.5rem;
         }
@@ -124,10 +126,11 @@
         // line-height: 1.15;
         // color: white;
  
-        font-weight: 200;
+        font-weight: 300;
         line-height: 1.15;
         color: $gray;
         margin-bottom: 2rem;
+        
  
         @include mdup {
             font-size: 1.25rem;
@@ -149,10 +152,11 @@
         // line-height: 1.5;
         // color: white;
         // margin-top: 1rem;
-        font-weight: 200;
+        font-weight: 300;
         line-height: 1.5;
         color: $gray;
         margin-top: 1rem;
+        margin-bottom: 0;
         
         
 
@@ -205,7 +209,7 @@
 
 
    #centeredsection{
-       margin: 5rem auto;
+       margin: 0rem auto 4rem;
        background-color: $darkGray0;
        justify-content: center;
     //    max-width: 70%;
@@ -262,12 +266,13 @@
 .Button {
     border-radius: 8px;
     box-shadow: 0px 0px 0px 2px $gray inset;
-    margin-top: 4rem;
+    margin-top: 2rem;
     cursor: pointer;
     color:$gray;            
     display:inline-block;
     padding:16px 32px;
     font-family: 'Poppins', sans-serif;
+    font-weight: 300;
     
     @include mdup {
         font-size: 1.25rem;
@@ -292,8 +297,8 @@
 }
 
 .Button:active {
-    background-color: $blue2;
-    box-shadow: 0px 0px 0px 2px $blue2 inset;
+    background-color: $blue;
+    box-shadow: 0px 0px 0px 2px $blue inset;
     
 }
 
@@ -373,7 +378,7 @@
 &__image {
     display: block;
     // padding: 5rem 3rem;
-    padding: 2% 6.5%;
+    padding: 2% 2%;
     margin-top: auto;
     margin-bottom: auto;    
 
@@ -384,7 +389,7 @@
 
     @include lgxldown{
         // padding: 4rem auto;
-        padding-top: 2rem;
+        padding-top: 2%;
         margin-left: auto;
         margin-right: auto;
     
