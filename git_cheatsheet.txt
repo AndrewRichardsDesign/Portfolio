@@ -26,6 +26,43 @@ git checkout <BRANCH NAME>
 
 
 
+
+If I commit a large file but it doesn't commit, then delete it and try to commit/push again git will still try to push that deleted file. You need to reset it...
+
+(Find out how far ahead you are of the remote:)
+'git status'
+
+
+(It will tell you how many commits you are ahead. If it is 3 commits, do this:)
+'git reset --soft HEAD~3' (Replace 3 with however many commits you are ahead.)
+
+
+(Be careful not to mess up this command and do a hard reset, or you will lose your work. It needs to be a soft reset, which resets your git status but leaves your disk untouched…)
+
+
+(Then re-add everything:)
+git add -A
+
+
+(And recommit:)
+git commit -m "Squashed commit"
+
+
+(Push.)
+'git push'
+
+It should be as though the file was never committed.
+
+
+
+
+
+
+
+
+
+
+
 git commit -am "<INSERT MESSAGE HERE>" (is this actually git commit -a)
 	-creates a payload or commit with the specified message
 

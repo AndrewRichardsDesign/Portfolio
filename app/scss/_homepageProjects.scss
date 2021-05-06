@@ -34,17 +34,19 @@
         font-family: 'Poppins', sans-serif;
         line-height: 1.5;
         color: white;
+        padding: 10% 0;
+        margin-top: auto;
+        margin-bottom: auto;
         margin-left: 4rem;
         margin-right: 4rem;
-        // margin-top: auto;
-        // margin-bottom: auto;
-        margin-top: min(10%);
-        margin-bottom: min(10%);
+        // margin-top: min(10%);
+        // margin-bottom: min(10%);
         max-width: 33%;
         
         
 
         @include lgxldown {
+            padding: 3% 0 0;
             margin: 2rem 2rem;
             max-width: 80%;
         }
@@ -65,7 +67,7 @@
 
             @include lgxldown {
                 font-size: 2.5rem;
-                margin-top: 1rem;
+                // margin-top: 1rem;
             }
 
             @include mddown {
@@ -184,7 +186,7 @@
 
     @include mddown {
         font-size: 1rem;
-        margin-bottom: 1rem;
+        // margin-bottom: 1rem;
     }
     
 }
