@@ -1,7 +1,7 @@
 
 
 
-.projectpagebody {
+.subprojectpage {
     
 
     &__flex {
@@ -28,11 +28,43 @@
         } 
         
 
+    }
+
+
+    #topsection {
+        background-color: $darkGray0;
+        max-width: 60%;
+        margin-top: 5rem;
+
+        
+        @include mdup {
+            max-width: 80%;
+        }
+
+        @include lgxldown {
+            max-width: 100%;
+            margin-left: 2%;
+            
+        }
+
+        @include mddown {
+            max-width: 100%;
+        }
 
     }
 
 
-    
+
+
+//first block of text on subpage
+    #FirstItemTopSection {
+        background-color: $darkGray0;
+        max-width: 60%;
+        padding-top: 0;
+        margin-top: 0rem;
+    }
+
+
 
 
     &__flex2 {
@@ -82,7 +114,8 @@
         margin-bottom: auto;
         // margin-top: min(3%);
         // margin-bottom: min(3%);
-        max-width: 33%;
+        // max-width: 33%;
+        max-width: 80%;
         
 
         @include lgxldown {
@@ -209,34 +242,10 @@
     }
 
 
-
-   #centeredsection{
-       margin: 0rem auto 4rem;
-       background-color: $darkGray0;
-       justify-content: center;
-    //    max-width: 70%;
-    
-       @include mdup {
-        max-width: 70%;
-        }
-
-        @include lgxldown {
-            max-width: 90%;
-        }
-
-        @include mddown {
-            max-width: 95%;
-        }
-
-
-   }
-
-   #endofsection{
-       margin-bottom: 5rem;
-   }
-
-
-
+  
+   
+   
+   
 
 
 
@@ -404,40 +413,69 @@
 }
 
 
-
-    // &__image {
-
-    //     display: block;
-    //     padding: 5rem 3rem;
-
-    //     img {
-    //         width: 40rem;
-    //     }
-
-    // }
    
+
+
+
+
+    &__image2 {
+        display: block;
+        background-color: $darkGray0;
+        justify-content: center;
+        // padding: 2% 2%;
+        
+        img {
+            width: 100%;
+        }
+
+        @include mdup {
+        margin: 0rem 10% 1rem;
+        }
+    
+        @include lgxldown {
+        margin: 0rem 5% 1rem;
+        }
+    
+        @include mddown {
+        margin: 0rem 2% 1rem;
+        }
+
+    }
+
+
+    #centeredimage {
+        background-color: $darkGray0;
+
+       
+    }
+
+
+  
+
 
 
 
 
 // for images on project sub pages
 
-    &__image2 {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center;
-        width: 5rem;
+    // &__image2 {
+    //     display: block;
+    //     margin-left: auto;
+    //     margin-right: auto;
+    //     justify-content: center;
+    //     width: 5rem;
 
 
 
-        @include lgdown {
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 0rem;
-        }
+    //     @include lgdown {
+    //         margin-left: auto;
+    //         margin-right: auto;
+    //         margin-bottom: 0rem;
+    //     }
 
-    }
+    // }
+
+
 
 
 
