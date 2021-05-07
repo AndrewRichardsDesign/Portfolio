@@ -13,6 +13,7 @@
             line-height: 1.5;
             color: white;
             margin: 15rem 2rem 3rem;
+            width: 110%;
 
             @include lgxldown {
                 margin: 10rem 1rem 2rem;
@@ -48,6 +49,7 @@
                 padding-top: 5rem;
                 padding-left: 5rem;
                 transform: translateX(-5rem);
+                width: 110%;
                 
         
                 @include mdup {
@@ -133,17 +135,17 @@
 
                 @include mdup {
                     font-size: 1.25rem;
-                    max-width: 60%;
+                    width: 60%;
                 }
 
                 @include lgxldown {
                     font-size: 1.25rem;
-                    max-width: 80%;
+                    width: 80%;
                 }
 
                 @include mddown {
                     font-size: 1rem;
-                    max-width: 95%;
+                    width: 85%;
                 }
 
             }            

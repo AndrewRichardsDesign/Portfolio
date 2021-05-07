@@ -7,58 +7,38 @@
     .projectpageheader2 {
         display: flex;
         background-color: $darkGray0;
-        // border-top: 10rem $blue inset;
         margin-bottom: 4rem;
 
 
     
         &__text {
+
             font-family: 'Poppins', sans-serif;
             line-height: 1.5;
             color: white;
-            margin: 10rem 2rem 3rem;
+            margin-top: 10rem;
+            margin-left: 2rem;
+            
 
             @include lgxldown {
-                margin: 10rem 1rem 2rem;
+                margin-top: 10rem;
+                margin-left: 2rem;
 
             }
 
-            // opacity: 1;
-            // color: $gray4;
-            // text-align: left;
-            
-
-            // @include mddown {
-            //     margin-left: 0rem;
-            // }
     
-
-            // margin-top: min(10%);
-            // margin-bottom: min(10%);
-            // max-width: 33%;
             
     
-           
-        
+    
 
 
             h1 {
-                // font-size: 1.5rem;
-                // line-height: 1.15;
-                // font-weight: 100;
-                // margin-bottom: .2rem;
-
-                // @include mddown {
-                //     font-size: 1rem;
-                // }
-                // background-color: $blue;
-                border-bottom: 1rem $blue inset;
-                transform: translateX(-5rem);
-                padding: 1rem 5rem;
+                // transform: translateX(-5rem);
+                // padding: 0rem 5rem;
                 font-weight: 600;
                 font-size: 3rem;
                 line-height: 1.15;
-                margin-bottom: 2rem;
+                margin-bottom: .5rem;
                 
         
                 @include mdup {
@@ -68,34 +48,26 @@
                 @include lgxldown {
                     font-size: 3rem;
                     margin-top: 1rem;
-                    
+
                 }
         
                 @include mddown {
                     font-size: 2rem;
 
-                }
-
-
-
-            
+                }            
             }
+
+
+            hr {
+                border: 10px solid $blue;
+                margin-top: 0;
+                margin-bottom: 0;
+
+              }
+           
 
              
             h2 {
-                // line-height: 1.15;
-                // font-weight: 400;
-                // margin-top: .5rem;
-                // margin-bottom: 2rem;
-            
-                // @include mddown {
-                //     font-size: 3rem;
-                // }
-    
-                // @include mdup {
-                //     font-size: 5rem;
-                // }
-
                 font-weight: 400;
                 margin-bottom: 2rem;
                 line-height: 1.15;
@@ -119,22 +91,6 @@
     
     
             p {
-                // font-weight: 100;
-                // line-height: 1.5;
-                // margin-top: .5rem;
-                // margin-bottom: 1rem;
-    
-                // @include mddown {
-                //     font-size: 1rem;
-                //     margin-right: 5%;
-                // }
-
-                // @include mdup {
-                //     font-size: 1.5rem;
-                //     margin-right: 25%;
-                // } 
-                
-                
                 font-weight: 300;
                 line-height: 1.5;
                 color: $white;
@@ -144,22 +100,18 @@
 
                 @include mdup {
                     font-size: 1.25rem;
-                    max-width: 60%;
+                    width: 60%;
                 }
 
                 @include lgxldown {
                     font-size: 1.25rem;
-                    max-width: 80%;
+                    width: 80%;
                 }
 
                 @include mddown {
                     font-size: 1rem;
-                    max-width: 95%;
+                    width: 85%;
                 }
-
-            }            
+            }          
         }
-
-
-
         }   

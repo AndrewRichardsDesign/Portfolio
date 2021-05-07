@@ -335,18 +335,37 @@
         overflow-y: hidden;
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
-        margin-right: 1rem;
+        // margin-right: 1rem;
 
-      
         .horizontalrow1 {
           display: inline-block;
-          margin-top: 3rem;
-        //   margin-left: 1rem;
+          margin-bottom: 1rem;
+        
           
-
+          img{
+            //   height: 50rem;
+            height: 75vh;
+          }
+          
         }
+
+
+        @include mdup {
+            margin: 0rem 0% 1rem 10%;
+            }
+        
+            @include lgxldown {
+            margin: 0rem 0% 1rem 5%;
+            }
+        
+            @include mddown {
+            margin: 0rem 0% 1rem 2%;
+            }
       }
     
+
+
+
 
       #h-image {
         height: 30rem;
@@ -444,13 +463,11 @@
 
 
     #centeredimage {
-        background-color: $darkGray0;
-
-       
+        background-color: $darkGray0;       
     }
 
 
-  
+
 
 
 

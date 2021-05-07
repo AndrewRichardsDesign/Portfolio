@@ -145,7 +145,7 @@ a, a:visited, a:hover {
 }
 
 .container--pl {
-  padding-left: 1.5rem;
+  padding-left: 1rem;
 }
 
 .flex {
@@ -689,6 +689,7 @@ a, a:visited, a:hover {
   line-height: 1.5;
   color: white;
   margin: 15rem 2rem 3rem;
+  width: 110%;
 }
 
 @media (max-width: 1259px) {
@@ -707,6 +708,7 @@ a, a:visited, a:hover {
   padding-left: 5rem;
   -webkit-transform: translateX(-5rem);
           transform: translateX(-5rem);
+  width: 110%;
 }
 
 @media (min-width: 769px) {
@@ -764,21 +766,21 @@ a, a:visited, a:hover {
 @media (min-width: 769px) {
   .projectpageheader__text p {
     font-size: 1.25rem;
-    max-width: 60%;
+    width: 60%;
   }
 }
 
 @media (max-width: 1259px) {
   .projectpageheader__text p {
     font-size: 1.25rem;
-    max-width: 80%;
+    width: 80%;
   }
 }
 
 @media (max-width: 768px) {
   .projectpageheader__text p {
     font-size: 1rem;
-    max-width: 95%;
+    width: 85%;
   }
 }
 
@@ -1626,12 +1628,33 @@ a, a:visited, a:hover {
   overflow-y: hidden;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
-  margin-right: 1rem;
 }
 
 .subprojectpage .scrolling-wrapper .horizontalrow1 {
   display: inline-block;
-  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.subprojectpage .scrolling-wrapper .horizontalrow1 img {
+  height: 75vh;
+}
+
+@media (min-width: 769px) {
+  .subprojectpage .scrolling-wrapper {
+    margin: 0rem 0% 1rem 10%;
+  }
+}
+
+@media (max-width: 1259px) {
+  .subprojectpage .scrolling-wrapper {
+    margin: 0rem 0% 1rem 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .subprojectpage .scrolling-wrapper {
+    margin: 0rem 0% 1rem 2%;
+  }
 }
 
 .subprojectpage #h-image {
@@ -1730,24 +1753,22 @@ a, a:visited, a:hover {
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   color: white;
-  margin: 10rem 2rem 3rem;
+  margin-top: 10rem;
+  margin-left: 2rem;
 }
 
 @media (max-width: 1259px) {
   .projectpageheader2__text {
-    margin: 10rem 1rem 2rem;
+    margin-top: 10rem;
+    margin-left: 2rem;
   }
 }
 
 .projectpageheader2__text h1 {
-  border-bottom: 1rem #6a80fb inset;
-  -webkit-transform: translateX(-5rem);
-          transform: translateX(-5rem);
-  padding: 1rem 5rem;
   font-weight: 600;
   font-size: 3rem;
   line-height: 1.15;
-  margin-bottom: 2rem;
+  margin-bottom: .5rem;
 }
 
 @media (min-width: 769px) {
@@ -1767,6 +1788,12 @@ a, a:visited, a:hover {
   .projectpageheader2__text h1 {
     font-size: 2rem;
   }
+}
+
+.projectpageheader2__text hr {
+  border: 10px solid #6a80fb;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .projectpageheader2__text h2 {
@@ -1805,21 +1832,21 @@ a, a:visited, a:hover {
 @media (min-width: 769px) {
   .projectpageheader2__text p {
     font-size: 1.25rem;
-    max-width: 60%;
+    width: 60%;
   }
 }
 
 @media (max-width: 1259px) {
   .projectpageheader2__text p {
     font-size: 1.25rem;
-    max-width: 80%;
+    width: 80%;
   }
 }
 
 @media (max-width: 768px) {
   .projectpageheader2__text p {
     font-size: 1rem;
-    max-width: 95%;
+    width: 85%;
   }
 }
 /*# sourceMappingURL=style.css.map */

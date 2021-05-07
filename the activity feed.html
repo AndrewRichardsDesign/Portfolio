@@ -6,7 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet"> -->
+  
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">  -->
+  
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+
+  <!-- FONTS -->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Prompt:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+
+
   <link rel="stylesheet" href="./dist/style.css">
   <title>Andrew Richards</title>
 
@@ -16,241 +32,278 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="body">
+
+
+  
+
+
+
+
+
+ 
+ <!-- -----HEADER----- -->
+
+<header class="header">
+
+
+<nav id="myNav"
+class="container"
+>
+<a href="./index.html" class="header__logo">
+<img src="images/logo/Group 111.svg" alt="AR">
+</a>
+<div class="header__links">
+<a href="index.html">Projects</a><a href="emptypage.html">About</a><a href="emptypage.html">Contact</a>      
+</div>
+</nav>
+</header>
 
 
 
 
     
 
-  <!-- -----HEADER----- -->
+    <!-- USAA is a wide-reaching financial services company that provides banking, insurance, investing, and many other services
+    to the military and their families.  view financial information, service their products, and open new accounts. -->
 
-  <header class="header">
 
 
-    <nav id="myNav"
-    class="container"
-    >
-      <a href="/" class="header__logo">
-        <img src="images/mylogo.svg" alt="AR">
-        </a>
-        <div class="header__links">
-          <a href="index.html">Projects</a><a href="about.html">About</a><a href="contact.html">Contact</a>        </div>
-    </nav>
-    </header>
+
+
+
   
-
-
-
-
 
 
 
 <!-- -----PROJECT_HEADER------ -->
 
 <section class="projectpageheader2">
-    <div class="container">
-      <div class="projectpageheader2__text container--pall">
+<div class="projectpageheader2__text">
+
+<hr> 
+
+<h1>
+The Activity Feed
+</h1>
+
+<h2>
+USAA - Member Home
+</h2>
+
+<p>
+  The activity feed (right column) is designed to provide information and allow members to take actions related to their relationship with USAA. It’s powered by a prioritization algorithm that ranks cards, considering the member’s utilization, product line up, and events like tax season.
+
+</p>
+
+</div>
+</section>
+
+      
+
+
         
-        <h1>    
-        The Activity Feed
-        </h1>
-        <p>
-            The activity feed (right column) is designed to provide information and allow members to take actions related to their relationship with USAA. It’s powered by a prioritization algorithm that ranks cards, considering the member’s utilization, product line up, and events like tax season.
-        </p>
-      </div>
+
+
+
+
+      
+<!-- id="centeredsection" -->
+
+<section class="subprojectpage" id="subprojectpage">
+  <div class="subprojectpage__flex" id="topsection">   
+  
+  <div class="subprojectpage__text" id="topsection">
+  
+  <h1>
+    "Claims" activity card
+  </h1>
+  
+  <p>
+    The claims card is one of two activity cards I designed. It provides statuses at each step in the process, an entry point to the claims center, and a message counter from the member’s ongoing conversation with claims adjusters.
+
+  </p>
+
+  </div>
+  </div>
+  </section>
+
+
+  <section class="subprojectpage" id="subprojectpage">
+    <div class="subprojectpage__flex" id="centeredimage">   
     
-    
-    
-    
-    
+      <div class="subprojectpage__image2">
+        <img src="https://drive.google.com/uc?id=14Jm6ErCRU06NtteAyQPPKnHnzFplQWLa"/>
+        </div>
     
     </div>
     </section>
-    
 
 
-    
+
+<section class="subprojectpage" id="subprojectpage">
+<div class="subprojectpage__flex" id="topsection">   
+
+<div class="subprojectpage__text" id="topsection">
+
+<h1>
+  Claims journey
+</h1>
+
+<p>
+The entire claims process from start to end.
+</p>
+
+</div>
+</div>
+</section>
 
 
+
+
+
+
+
+<section class="subprojectpage" id="subprojectpage">
+  <div class="subprojectpage__flex" id="topsection">   
+  
+  <div class="subprojectpage__text" id="topsection">
+  
+  <h1>
+    Claims cards in context of page
+
+  </h1>
+  
+  <p>
+    The claims card displays in the activity feed (right column).
+
+  </p>
   
 
 
 
+  </div>
+  </div>
+  </section>
 
 
 
-        <section class="projectpagebody" id="projectpagebody">
-            <div class="projectpagebody__flex2" id="projectsubpage">   
+
+
+
+  <section class="subprojectpage" id="subprojectpage">
+    <div class="subprojectpage__flex" id="topsection">   
+    
+    <div class="subprojectpage__text" id="topsection">
+    
+    <h1>
+      Claims card behavioral rules and developer specs
+
+  
+    </h1>
+    
+    <p>
+      The spec sheet contains documentation for all variations of the claims card, including content rules, error states, and data retrieval.
+    </p>
+
+    <p>
+    --->
+    </p>
+    
+    
+    </div>
+    </div>
+    </section>
+
+
+    <section class="subprojectpage" id="subprojectpage">
+      <div class="subprojectpage__flex" id="centeredimage">   
       
-              <div class="projectpagebody__text" id="topofsection">
-                
-                  <h1>
-                    "Claims" activity card
-                </h1>
+        <div class="scrolling-wrapper">
+          <div class="horizontalrow1">
+      
+              <img src="https://drive.google.com/uc?id=1McgIOcCVgFVclM2uPElvRpS77mZo7f7f"/>
+                                   
+            </div>
+          </div>  
+      
+      </div>
+      </section>
+
+
+
+
+
+
+
+
+
+    <section class="subprojectpage" id="subprojectpage">
+      <div class="subprojectpage__flex" id="topsection">   
+      
+      <div class="subprojectpage__text" id="topsection">
+      
+      <h1>
+        "Real estate rewards network" activity card
+  
     
-                <p>
-                    The claims card is one of two activity cards I designed. It provides statuses at each step in the process, an entry point to the claims center, and a message counter from the member’s ongoing conversation with claims adjusters.               
-                </p>
+      </h1>
+      
+      <p>
+        The real estate rewards network card was intended to walk members through the process of buying and selling a house and ultimately receiving a monetary reward from USAA, but budget constraints simplified the solution to a simple list of properties and a corresponding reward status (pending or sent).
+    
+      </p>
+      
+      </div>
+      </div>
+      </section>
+
+
+
+
+
+      <section class="subprojectpage" id="subprojectpage">
+        <div class="subprojectpage__flex" id="topsection">   
         
+        <div class="subprojectpage__text" id="topsection">
+        
+        <h1>
+          Real estate rewards network
     
-              </div>
-
-    
-                
-                    <div class="projectpagebody__image2" >
-                        <img src='/images/USAA/Member Home/The activity feed /claims triple@2x.png' id="image10"></img>
-                        </div>
-    
-
-
-              
-                </div>  
-
-            </section>
+      
+        </h1>
+        
+        <p>
+          Design iterations.
+      
+        </p>
+        
+        </div>
+        </div>
+        </section>
 
 
 
 
-
-
-
-
-
-
-            <section class="projectpagebody" id="projectpagebody">
-                <div class="projectpagebody__flex2" id="projectsubpage">   
+        <section class="subprojectpage" id="subprojectpage">
+          <div class="subprojectpage__flex" id="topsection">   
           
-                  <div class="projectpagebody__text">
-                    
-                      <h1>
-                    Claims journey
-                      </h1>
-        
-                    <p>
-                    The entire claims process from start to end.
-                    </p>
-        
-        
-        
-                    
-                  </div>
-         
-                 <div class="scrolling-wrapper">
-                    <div class="horizontalrow1">
-                
-                        <img src='/images/USAA/Member Home/The activity feed /claims journey.png' id="image1"></img>
-                      
-        
-                      </div>
-                  
-        
-                  
-                    </div>  
-                  </div>
-                </section>
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <section class="projectpagebody" id="projectpagebody">
-            <div class="projectpagebody__flex2" id="projectsubpage">   
+          <div class="subprojectpage__text" id="topsection">
+          
+          <h1>
+            Real estate rewards network journey
       
-              <div class="projectpagebody__text">
-                
-                  <h1>
-                Claims cards in context of page
-                  </h1>
-    
-                  
-                    <p>
-                    The claims card displays in the activity feed (right column).
-                    </p>
-    
-                  </div>
-    
-                
-                    <div class="projectpagebody__image2">
-                        <img src='/images/USAA/Member Home/The activity feed /1 claim.png' id="image2"></img>
-                        <img src='/images/USAA/Member Home/The activity feed /2 claims.png' id="image2"></img>
-                        </div>
-    
-
-
-              
-                </div>  
-              
-            </section>
-
-
-
-
-
-
-
-
-
-            
-
-    <section class="projectpagebody" id="projectpagebody">
-        <div class="projectpagebody__flex2" id="projectsubpage">   
-    
-            <div class="projectpagebody__text">
-            
-                <h1>
-            Claims card behavioral rules and developer specs
-                </h1>
-
-                
-                <p>
-                The spec sheet contains documentation for all variations of the claims card, including content rules, error states, and data retrieval.
-                </p>
-
-
         
-            
-                           
+          </h1>
+          
+          <p>
+            The process a member undertakes from start to finish.
+        
+          </p>
+          
           </div>
- 
-          <div class="scrolling-wrapper">
-             <div class="horizontalrow1">
-         
-                 <img src='/images/USAA/Member Home/The activity feed /claims spec horizontal.png' id="image11"></img>
-               
- 
-               </div>
-    
-
-               <!-- <div class="projectpagebody__image2">
-
-
-                <img src='/images/USAA/Member Home/The activity feed /claims spec horizontal.png'id="image11"></img>
-                <img src='/images/USAA/Member Home/The activity feed /claims spec narrow.png' class="narrow" id="image11"></img>
-                </div> -->
-
-    
-
-
-
-                
-                  
-                    </div>  
-                  </div>
-                </section>
+          </div>
+          </section>
 
 
 
@@ -261,129 +314,16 @@
 
 
 
-
-
-
-        <section class="projectpagebody" id="projectpagebody">
-            <div class="projectpagebody__flex2" id="projectsubpage">   
         
-                <div class="projectpagebody__text">
-                
-                    <h1>
-                    "Real estate rewards network" activity card
-                    </h1>
-    
-                    
-                    <p>
-                        The real estate rewards network card was intended to walk members through the process of buying and selling a house and ultimately receiving a monetary reward from USAA, but budget constraints simplified the solution to a simple list of properties and a corresponding reward status (pending or sent).                     
-                    </p>
-    
-                  </div>
-    
-                
-                    <div class="projectpagebody__image2" id="projectsubpage">
-
-                        <img src='/images/USAA/Member Home/The activity feed /RERN final.png' id="image10"></img>
-
-                        </div>
-    
-
-
-                
-                </div>  
-               
-            </section>
-
-
-
-
-
-
-
-
-
-            <section class="projectpagebody" id="projectpagebody">
-                <div class="projectpagebody__flex2" id="projectsubpage">   
+            <script src="./app/js/script.js"></script>
             
-                    <div class="projectpagebody__text">
-                    
-                        <h1>
-                        Real estate rewards network 
-                        </h1>
-        
-                        
-                        <p>
-                        Design iterations.
-                        </p>
-                      
-                      </div>
-    
-        
-                    
-                        <div class="projectpagebody__image2">
-                            <img src='/images/USAA/Member Home/The activity feed /RERN iterations triple@2x.png' id="image10"></img>
-
-    
-                            </div>
-        
-    
-    
-                    
-                    </div>  
-
-                </section>
-    
-
-
-
-
-
-
-
-
-                <section class="projectpagebody" id="projectpagebody">
-                    <div class="projectpagebody__flex2" id="projectsubpage">   
-                
-                        <div class="projectpagebody__text">
-                        
-                            <h1>
-                            Real estate rewards network journey
-                            </h1>
             
-                            
-                            <p>
-                            The process a member undertakes from start to finish.
-                            </p>
-            
-                          </div>
-
-                                <div class="scrolling-wrapper">
-                                    <div class="horizontalrow1">
-                                
-                                        <img src='/images/USAA/Member Home/The activity feed /RERN journey.png' id="image10"></img>
-                                      
-                        
-                                      </div>
         
-                                </div>  
-                        </div>
-                      
-                    
-                    </section>
         
-    
+        
+        </body>
+        </html>
+        
+        
 
 
-
-
-
-
-
-
-      
-
-      <script src="./app/js/script.js"></script>
-
-
-</body>
-</html>
