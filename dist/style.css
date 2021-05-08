@@ -118,8 +118,8 @@ a, a:visited, a:hover {
 }
 
 .container--pall {
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 .container--py {
@@ -681,21 +681,14 @@ a, a:visited, a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 8rem;
 }
 
 .projectpageheader__text {
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   color: white;
-  margin: 15rem 2rem 3rem;
+  margin: 0rem 1rem 10rem 0rem;
   width: 110%;
-}
-
-@media (max-width: 1259px) {
-  .projectpageheader__text {
-    margin: 10rem 1rem 2rem;
-  }
 }
 
 .projectpageheader__text h1 {
@@ -704,11 +697,11 @@ a, a:visited, a:hover {
   font-size: 3rem;
   line-height: 1.15;
   margin-bottom: .75rem;
-  padding-top: 5rem;
+  padding-top: 15rem;
   padding-left: 5rem;
   -webkit-transform: translateX(-5rem);
           transform: translateX(-5rem);
-  width: 110%;
+  width: 150%;
 }
 
 @media (min-width: 769px) {
@@ -734,7 +727,7 @@ a, a:visited, a:hover {
   font-weight: 400;
   margin-bottom: 2rem;
   line-height: 1.15;
-  color: white;
+  color: #cccccc;
 }
 
 @media (min-width: 769px) {
@@ -758,7 +751,7 @@ a, a:visited, a:hover {
 .projectpageheader__text p {
   font-weight: 300;
   line-height: 1.5;
-  color: white;
+  color: #cccccc;
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
@@ -1737,6 +1730,11 @@ a, a:visited, a:hover {
   background-color: #141414;
 }
 
+.subprojectpage #lightbackgroundimage {
+  background-color: white;
+  height: 85vh;
+}
+
 .body {
   background-color: #141414;
 }
@@ -1746,26 +1744,17 @@ a, a:visited, a:hover {
   display: -ms-flexbox;
   display: flex;
   background-color: #141414;
-  margin-bottom: 4rem;
 }
 
 .projectpageheader2__text {
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   color: white;
-  margin-top: 10rem;
-  margin-left: 2rem;
-}
-
-@media (max-width: 1259px) {
-  .projectpageheader2__text {
-    margin-top: 10rem;
-    margin-left: 2rem;
-  }
+  margin: 0rem 1rem 5rem 2rem;
 }
 
 .projectpageheader2__text h1 {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 3rem;
   line-height: 1.15;
   margin-bottom: .5rem;
@@ -1791,9 +1780,29 @@ a, a:visited, a:hover {
 }
 
 .projectpageheader2__text hr {
-  border: 10px solid #6a80fb;
+  -webkit-transform: translateX(-2rem);
+          transform: translateX(-2rem);
   margin-top: 0;
   margin-bottom: 0;
+  width: 150%;
+}
+
+@media (min-width: 769px) {
+  .projectpageheader2__text hr {
+    border: 9.86rem solid #6a80fb;
+  }
+}
+
+@media (max-width: 1259px) {
+  .projectpageheader2__text hr {
+    border: 7rem solid #6a80fb;
+  }
+}
+
+@media (max-width: 768px) {
+  .projectpageheader2__text hr {
+    border: 5rem solid #6a80fb;
+  }
 }
 
 .projectpageheader2__text h2 {
