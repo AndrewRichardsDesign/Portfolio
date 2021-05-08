@@ -63,22 +63,23 @@
                 margin-top: 0;
                 margin-bottom: 0;
                 width: 150%;
+                border: 5rem solid $blue;
 
-                @include mdup {
-                    border: 9.86rem solid $blue;
-                }
+                // @include mdup {
+                //     // border: 9.86rem solid $blue;
+                //     border: 7rem solid $blue;
+                // }
         
-                @include lgxldown {
-                    border: 7rem solid $blue;
+                // @include lgxldown {
+                //     border: 7rem solid $blue;
 
 
-                }
+                // }
         
-                @include mddown {
-                    border: 5rem solid $blue;
+                // @include mddown {
+                //     border: 5rem solid $blue;
 
-
-                }    
+                // }    
 
               }
            

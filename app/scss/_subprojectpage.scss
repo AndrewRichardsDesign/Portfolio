@@ -304,31 +304,30 @@
         overflow-y: hidden;
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
-        // margin-right: 1rem;
 
         .horizontalrow1 {
           display: inline-block;
-          margin-bottom: 1rem;
         
           
           img{
-            //   height: 50rem;
-            height: 75vh;
+            height: 85vh;
+            margin-bottom: 0;
+            padding-right: 2rem;
           }
           
         }
 
 
         @include mdup {
-            margin: 0rem 0% 1rem 10%;
+            margin: 0rem 0% 0rem 10%;
             }
         
             @include lgxldown {
-            margin: 0rem 0% 1rem 5%;
+            margin: 0rem 0% 0rem 5%;
             }
         
             @include mddown {
-            margin: 0rem 0% 1rem 2%;
+            margin: 0rem 0% 0rem 2%;
             }
       }
     
@@ -438,7 +437,7 @@
 
     #lightbackgroundimage {
         background-color: $white;       
-        height: 85vh;
+        // height: 85vh;
     }
 
 

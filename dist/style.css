@@ -1034,12 +1034,42 @@ a, a:visited, a:hover {
   overflow-y: hidden;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
-  margin-right: 1rem;
 }
 
 .projectpagebody .scrolling-wrapper .horizontalrow1 {
   display: inline-block;
-  margin-top: 3rem;
+}
+
+.projectpagebody .scrolling-wrapper .horizontalrow1 img {
+  height: 85vh;
+  margin-bottom: 0;
+  padding-right: 2.5rem;
+}
+
+@media (min-width: 769px) {
+  .projectpagebody .scrolling-wrapper {
+    margin: 0rem 0% 0rem 10%;
+  }
+}
+
+@media (max-width: 1259px) {
+  .projectpagebody .scrolling-wrapper {
+    margin: 0rem 0% 0rem 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .projectpagebody .scrolling-wrapper {
+    margin: 0rem 0% 0rem 2%;
+  }
+}
+
+.projectpagebody #pair {
+  padding-right: .5rem;
+}
+
+.projectpagebody #centeredimage {
+  background-color: #141414;
 }
 
 .projectpagebody #h-image {
@@ -1625,28 +1655,29 @@ a, a:visited, a:hover {
 
 .subprojectpage .scrolling-wrapper .horizontalrow1 {
   display: inline-block;
-  margin-bottom: 1rem;
 }
 
 .subprojectpage .scrolling-wrapper .horizontalrow1 img {
-  height: 75vh;
+  height: 85vh;
+  margin-bottom: 0;
+  padding-right: 2rem;
 }
 
 @media (min-width: 769px) {
   .subprojectpage .scrolling-wrapper {
-    margin: 0rem 0% 1rem 10%;
+    margin: 0rem 0% 0rem 10%;
   }
 }
 
 @media (max-width: 1259px) {
   .subprojectpage .scrolling-wrapper {
-    margin: 0rem 0% 1rem 5%;
+    margin: 0rem 0% 0rem 5%;
   }
 }
 
 @media (max-width: 768px) {
   .subprojectpage .scrolling-wrapper {
-    margin: 0rem 0% 1rem 2%;
+    margin: 0rem 0% 0rem 2%;
   }
 }
 
@@ -1732,7 +1763,6 @@ a, a:visited, a:hover {
 
 .subprojectpage #lightbackgroundimage {
   background-color: white;
-  height: 85vh;
 }
 
 .body {
@@ -1785,24 +1815,7 @@ a, a:visited, a:hover {
   margin-top: 0;
   margin-bottom: 0;
   width: 150%;
-}
-
-@media (min-width: 769px) {
-  .projectpageheader2__text hr {
-    border: 9.86rem solid #6a80fb;
-  }
-}
-
-@media (max-width: 1259px) {
-  .projectpageheader2__text hr {
-    border: 7rem solid #6a80fb;
-  }
-}
-
-@media (max-width: 768px) {
-  .projectpageheader2__text hr {
-    border: 5rem solid #6a80fb;
-  }
+  border: 5rem solid #6a80fb;
 }
 
 .projectpageheader2__text h2 {
