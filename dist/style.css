@@ -145,7 +145,25 @@ a, a:visited, a:hover {
 }
 
 .container--pl {
-  padding-left: 1rem;
+  padding-left: 2rem;
+}
+
+@media (min-width: 769px) {
+  .container--pl {
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width: 1259px) {
+  .container--pl {
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container--pl {
+    padding-left: 1rem;
+  }
 }
 
 .flex {
@@ -681,14 +699,15 @@ a, a:visited, a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #242424;
+  margin-bottom: 2rem;
 }
 
 .projectpageheader__text {
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   color: white;
-  margin: 0rem 1rem 10rem 0rem;
-  width: 110%;
+  margin: 0rem 1rem 3rem 0rem;
 }
 
 .projectpageheader__text h1 {
@@ -696,7 +715,7 @@ a, a:visited, a:hover {
   font-weight: 600;
   font-size: 3rem;
   line-height: 1.15;
-  margin-bottom: .75rem;
+  margin-bottom: 0rem;
   padding-top: 15rem;
   padding-left: 5rem;
   -webkit-transform: translateX(-5rem);
@@ -724,10 +743,16 @@ a, a:visited, a:hover {
 }
 
 .projectpageheader__text h2 {
+  background-color: #6a80fb;
+  padding-left: 5rem;
+  padding-bottom: 1rem;
+  -webkit-transform: translateX(-5rem);
+          transform: translateX(-5rem);
   font-weight: 400;
   margin-bottom: 2rem;
   line-height: 1.15;
-  color: #cccccc;
+  color: white;
+  width: 150%;
 }
 
 @media (min-width: 769px) {
@@ -751,9 +776,9 @@ a, a:visited, a:hover {
 .projectpageheader__text p {
   font-weight: 300;
   line-height: 1.5;
-  color: #cccccc;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  color: white;
+  margin-top: 2rem;
+  margin-bottom: 0;
 }
 
 @media (min-width: 769px) {
@@ -1424,7 +1449,7 @@ a, a:visited, a:hover {
 .subprojectpage #topsection {
   background-color: #141414;
   max-width: 60%;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 @media (min-width: 769px) {
@@ -1773,14 +1798,15 @@ a, a:visited, a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #141414;
+  background-color: #242424;
+  margin-bottom: 2rem;
 }
 
 .projectpageheader2__text {
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   color: white;
-  margin: 0rem 1rem 5rem 2rem;
+  margin: 0rem 1rem 2rem 0rem;
 }
 
 .projectpageheader2__text h1 {
@@ -1788,6 +1814,7 @@ a, a:visited, a:hover {
   font-size: 3rem;
   line-height: 1.15;
   margin-bottom: .5rem;
+  margin-top: 2rem;
 }
 
 @media (min-width: 769px) {
@@ -1812,7 +1839,7 @@ a, a:visited, a:hover {
 .projectpageheader2__text hr {
   -webkit-transform: translateX(-2rem);
           transform: translateX(-2rem);
-  margin-top: 0;
+  margin-top: 0rem;
   margin-bottom: 0;
   width: 150%;
   border: 5rem solid #6a80fb;
@@ -1822,7 +1849,6 @@ a, a:visited, a:hover {
   font-weight: 400;
   margin-bottom: 2rem;
   line-height: 1.15;
-  color: white;
 }
 
 @media (min-width: 769px) {
@@ -1846,9 +1872,8 @@ a, a:visited, a:hover {
 .projectpageheader2__text p {
   font-weight: 300;
   line-height: 1.5;
-  color: white;
   margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }
 
 @media (min-width: 769px) {

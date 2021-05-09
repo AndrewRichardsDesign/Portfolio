@@ -72,7 +72,22 @@ a, a:visited, a:hover {
         padding-bottom: 2.25rem;
     }
     &--pl {
-        padding-left: 1rem;
+        padding-left: 2rem;
+
+        @include mdup {
+            padding-left: 2rem;
+        }
+
+        @include lgxldown {
+            padding-left: 2rem;
+            
+        }
+
+        @include mddown {
+            padding-left: 1rem;
+        }
+
+
     }
 }
 

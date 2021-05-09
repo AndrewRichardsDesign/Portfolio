@@ -4,33 +4,19 @@
 
     .projectpageheader {
         display: flex;
-        // background-color: $blue;
-        // margin-bottom: 8rem;
+        background-color: $darkGray;
+        margin-bottom: 2rem;
+    
     
     
         &__text {
             font-family: 'Poppins', sans-serif;
             line-height: 1.5;
             color: white;
-            margin: 0rem 1rem 10rem 0rem;
-            width: 110%;
-          
+            margin: 0rem 1rem 3rem 0rem;
             
-            // @include mdup {
-            // padding-left: 0rem;
-            // }
-    
-            // @include lgxldown {
-            //     margin-left: 0rem;
-                
-            // }
-    
-            // @include mddown {
-            //     margin-left: 2rem;
-                
-
-            // }
-           
+          
+        
         
 
 
@@ -39,7 +25,7 @@
                 font-weight: 600;
                 font-size: 3rem;
                 line-height: 1.15;
-                margin-bottom: .75rem;
+                margin-bottom: 0rem;
                 padding-top: 15rem;
                 padding-left: 5rem;
                 transform: translateX(-5rem);
@@ -69,10 +55,15 @@
 
              
             h2 {
+                background-color: $blue;
+                padding-left: 5rem;
+                padding-bottom: 1rem;
+                transform: translateX(-5rem);
                 font-weight: 400;
                 margin-bottom: 2rem;
                 line-height: 1.15;
-                color: $gray;
+                color: $white;
+                width: 150%;
          
                 @include mdup {
                     font-size: 1.25rem;
@@ -94,9 +85,9 @@
             p {
                 font-weight: 300;
                 line-height: 1.5;
-                color: $gray;
-                margin-top: 1rem;
-                margin-bottom: 2rem;
+                color: $white;
+                margin-top: 2rem;
+                margin-bottom: 0;
                 
 
                 @include mdup {
