@@ -4,7 +4,7 @@
 
     .projectpageheader {
         display: flex;
-        background-color: $darkGray;
+        background-color: $darkGray4;
         margin-bottom: 2rem;
     
     
@@ -21,14 +21,14 @@
 
 
             h1 {
-                background-color: $blue;
-                font-weight: 600;
+                color: $blue;
+                font-weight: 400;
                 font-size: 3rem;
                 line-height: 1.15;
                 margin-bottom: 0rem;
-                padding-top: 15rem;
-                padding-left: 5rem;
-                transform: translateX(-5rem);
+                padding-top: 10rem;
+                // padding-left: 5rem;
+                // transform: translateX(-5rem);
                 width: 150%;
                 
         
@@ -47,22 +47,18 @@
                     
 
                 }
-
-
-
             
             }
 
              
             h2 {
-                background-color: $blue;
+                color: $blue;
                 padding-left: 5rem;
                 padding-bottom: 1rem;
                 transform: translateX(-5rem);
                 font-weight: 400;
                 margin-bottom: 2rem;
                 line-height: 1.15;
-                color: $white;
                 width: 150%;
          
                 @include mdup {
@@ -83,6 +79,7 @@
     
     
             p {
+                
                 font-weight: 300;
                 line-height: 1.5;
                 color: $white;

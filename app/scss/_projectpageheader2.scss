@@ -26,15 +26,15 @@
 
 
             h1 {
+                color: $blue;
                 font-weight: 400;
-                font-size: 3rem;
                 line-height: 1.15;
                 margin-bottom: .5rem;
-                margin-top: 2rem;
+                margin-top: 10rem;
                 
         
                 @include mdup {
-                    font-size: 4rem;
+                    font-size: 3rem;
                 }
         
                 @include lgxldown {
@@ -50,20 +50,19 @@
             }
 
 
-            hr {
-                transform: translateX(-2rem);
-                margin-top: 0rem;
-                margin-bottom: 0;
-                width: 150%;
-                border: 5rem solid $blue;
+            // hr {
+            //     transform: translateX(-2rem);
+            //     margin-top: 0rem;
+            //     margin-bottom: 0;
+            //     width: 150%;
+            //     border: 5rem solid $blue;
 
-             
-
-              }
+            //   }
            
 
              
             h2 {
+                color: $blue;
                 font-weight: 400;
                 margin-bottom: 2rem;
                 line-height: 1.15;

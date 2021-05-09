@@ -277,7 +277,7 @@ a, a:visited, a:hover {
 .header__links a:hover {
   -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
-  background-color: #6a80fb;
+  background-color: #242424;
 }
 
 .header__links a:hover::before {
@@ -699,7 +699,7 @@ a, a:visited, a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #242424;
+  background-color: #212121;
   margin-bottom: 2rem;
 }
 
@@ -711,15 +711,12 @@ a, a:visited, a:hover {
 }
 
 .projectpageheader__text h1 {
-  background-color: #6a80fb;
-  font-weight: 600;
+  color: #6a80fb;
+  font-weight: 400;
   font-size: 3rem;
   line-height: 1.15;
   margin-bottom: 0rem;
-  padding-top: 15rem;
-  padding-left: 5rem;
-  -webkit-transform: translateX(-5rem);
-          transform: translateX(-5rem);
+  padding-top: 10rem;
   width: 150%;
 }
 
@@ -743,7 +740,7 @@ a, a:visited, a:hover {
 }
 
 .projectpageheader__text h2 {
-  background-color: #6a80fb;
+  color: #6a80fb;
   padding-left: 5rem;
   padding-bottom: 1rem;
   -webkit-transform: translateX(-5rem);
@@ -751,7 +748,6 @@ a, a:visited, a:hover {
   font-weight: 400;
   margin-bottom: 2rem;
   line-height: 1.15;
-  color: white;
   width: 150%;
 }
 
@@ -1227,7 +1223,7 @@ a, a:visited, a:hover {
   display: flex;
   margin: 2rem;
   max-width: 1700px;
-  background-color: #1f1f1f;
+  background-color: #212121;
   border-radius: 2px;
 }
 
@@ -1810,16 +1806,16 @@ a, a:visited, a:hover {
 }
 
 .projectpageheader2__text h1 {
+  color: #6a80fb;
   font-weight: 400;
-  font-size: 3rem;
   line-height: 1.15;
   margin-bottom: .5rem;
-  margin-top: 2rem;
+  margin-top: 10rem;
 }
 
 @media (min-width: 769px) {
   .projectpageheader2__text h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
@@ -1836,16 +1832,8 @@ a, a:visited, a:hover {
   }
 }
 
-.projectpageheader2__text hr {
-  -webkit-transform: translateX(-2rem);
-          transform: translateX(-2rem);
-  margin-top: 0rem;
-  margin-bottom: 0;
-  width: 150%;
-  border: 5rem solid #6a80fb;
-}
-
 .projectpageheader2__text h2 {
+  color: #6a80fb;
   font-weight: 400;
   margin-bottom: 2rem;
   line-height: 1.15;
