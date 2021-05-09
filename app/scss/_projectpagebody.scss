@@ -321,29 +321,61 @@
 
 
 
-    .scrolling-wrapper {
-        overflow-x: scroll;
-        overflow-y: hidden;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-        margin-right: 1rem;
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
 
-      
-        .horizontalrow1 {
-          display: inline-block;
-          margin-top: 3rem;
-        //   margin-left: 1rem;
-          
-
-        }
-      }
+    .horizontalrow1 {
+      display: inline-block;
     
+      
+      img{
+        height: 85vh;
+        margin-bottom: 0;
+        padding-right: 2.5rem;
+      }
+      
+    }
+
+
+    @include mdup {
+        margin: 0rem 0% 0rem 10%;
+        }
+    
+        @include lgxldown {
+        margin: 0rem 0% 0rem 5%;
+        }
+    
+        @include mddown {
+        margin: 0rem 0% 0rem 2%;
+        }
+  }
+    
+
+#pair{
+    padding-right: .5rem;
+}
+
+
+     
+  #centeredimage {
+    background-color: $darkGray0;       
+}
+
+
+
 
       #h-image {
         height: 30rem;
         padding-right: 2rem;
 
     }
+
+
+
+
 
 
       .scrolling-wrapper2 {
@@ -370,7 +402,10 @@
         padding-right: 2rem;
     }
 
-      
+ 
+
+
+
 
 
 // for images on project page
@@ -405,17 +440,7 @@
 
 
 
-    // &__image {
 
-    //     display: block;
-    //     padding: 5rem 3rem;
-
-    //     img {
-    //         width: 40rem;
-    //     }
-
-    // }
-   
 
 
 
