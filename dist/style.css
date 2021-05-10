@@ -1139,6 +1139,10 @@ a, a:visited, a:hover {
   }
 }
 
+.projectpagebody #video {
+  width: 40%;
+}
+
 .projectpagebody__image2 {
   display: block;
   margin-left: auto;
