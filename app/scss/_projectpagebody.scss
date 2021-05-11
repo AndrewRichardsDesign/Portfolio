@@ -212,10 +212,10 @@
 
 
    #centeredsection{
-       margin: 0rem auto 4rem;
+       margin: 0rem auto 2rem;
        background-color: $darkGray0;
        justify-content: center;
-    //    max-width: 70%;
+
     
        @include mdup {
         max-width: 70%;
@@ -228,9 +228,32 @@
         @include mddown {
             max-width: 95%;
         }
-
-
    }
+
+
+
+
+ #topsection {
+    background-color: $darkGray0;
+    justify-content: center;
+    margin: 5rem auto 2rem;
+    
+    @include mdup {
+        max-width: 70%;
+        }
+
+        @include lgxldown {
+            max-width: 90%;
+        }
+
+        @include mddown {
+            max-width: 95%;
+        }
+   
+    }
+
+
+
 
    #endofsection{
        margin-bottom: 5rem;
@@ -445,12 +468,12 @@
 
 
 #video{
-    width: 35%;
+    width: 45%;
     padding: 2% 2%;
-    margin-left: 60%;
+    margin-left: 55%;
 
     @include lgxldown{
-        margin-left: 35%;
+        margin-left: 30%;
         margin-right: auto;
     
         }
