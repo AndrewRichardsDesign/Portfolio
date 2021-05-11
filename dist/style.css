@@ -804,6 +804,9 @@ a, a:visited, a:hover {
   display: flex;
   margin: 2rem;
   max-width: 1600px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #242424;
   border-radius: 2px;
 }
@@ -1139,8 +1142,21 @@ a, a:visited, a:hover {
   }
 }
 
+.projectpagebody #smallerImage {
+  width: 45%;
+}
+
 .projectpagebody #video {
-  width: 40%;
+  width: 35%;
+  padding: 2% 2%;
+  margin-left: 60%;
+}
+
+@media (max-width: 1259px) {
+  .projectpagebody #video {
+    margin-left: 35%;
+    margin-right: auto;
+  }
 }
 
 .projectpagebody__image2 {
@@ -1788,6 +1804,13 @@ a, a:visited, a:hover {
 
 .subprojectpage #lightbackgroundimage {
   background-color: white;
+}
+
+.subprojectpage #iPad {
+  background-color: #141414;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .body {

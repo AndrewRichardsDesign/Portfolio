@@ -9,6 +9,7 @@
         display: flex;
         margin: 2rem;
         max-width: 1600px;
+        justify-content: space-between;
         // background-color: $darkGray1;
         background-color: $darkGray;
         border-radius: 2px;
@@ -414,7 +415,6 @@
 
 &__image {
     display: block;
-    // padding: 5rem 3rem;
     padding: 2% 2%;
     margin-top: auto;
     margin-bottom: auto;    
@@ -425,15 +425,12 @@
     }
 
     @include lgxldown{
-        // padding: 4rem auto;
-        // padding-top: 0%;
-        // padding: 0 0;
         margin-left: auto;
         margin-right: auto;
     
             img {
                 width: 100%;
-                // padding-top: 2rem;
+            
             }
         }
 }
@@ -441,9 +438,25 @@
 
 
 
+#smallerImage{
+    width: 45%;
+}
+
+
+
 #video{
-    width: 40%;
+    width: 35%;
+    padding: 2% 2%;
+    margin-left: 60%;
+
+    @include lgxldown{
+        margin-left: 35%;
+        margin-right: auto;
     
+        }
+
+
+
 }
 
 
