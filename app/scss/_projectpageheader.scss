@@ -22,18 +22,18 @@
 
             h1 {
                 color: $blue;
-                font-weight: 400;
-                font-size: 3rem;
+                font-weight: 600;
                 line-height: 1.15;
                 margin-bottom: 0rem;
                 padding-top: 10rem;
+                padding-bottom: 1rem;
                 // padding-left: 5rem;
                 // transform: translateX(-5rem);
                 width: 150%;
                 
         
                 @include mdup {
-                    font-size: 4rem;
+                    font-size: 5rem;
                 }
         
                 @include lgxldown {

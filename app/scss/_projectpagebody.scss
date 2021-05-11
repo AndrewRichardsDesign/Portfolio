@@ -9,6 +9,7 @@
         display: flex;
         margin: 2rem;
         max-width: 1600px;
+        justify-content: space-between;
         // background-color: $darkGray1;
         background-color: $darkGray;
         border-radius: 2px;
@@ -211,10 +212,10 @@
 
 
    #centeredsection{
-       margin: 0rem auto 4rem;
+       margin: 0rem auto 2rem;
        background-color: $darkGray0;
        justify-content: center;
-    //    max-width: 70%;
+
     
        @include mdup {
         max-width: 70%;
@@ -227,9 +228,32 @@
         @include mddown {
             max-width: 95%;
         }
-
-
    }
+
+
+
+
+ #topsection {
+    background-color: $darkGray0;
+    justify-content: center;
+    margin: 5rem auto 2rem;
+    
+    @include mdup {
+        max-width: 70%;
+        }
+
+        @include lgxldown {
+            max-width: 90%;
+        }
+
+        @include mddown {
+            max-width: 95%;
+        }
+   
+    }
+
+
+
 
    #endofsection{
        margin-bottom: 5rem;
@@ -414,7 +438,6 @@
 
 &__image {
     display: block;
-    // padding: 5rem 3rem;
     padding: 2% 2%;
     margin-top: auto;
     margin-bottom: auto;    
@@ -425,15 +448,12 @@
     }
 
     @include lgxldown{
-        // padding: 4rem auto;
-        // padding-top: 0%;
-        // padding: 0 0;
         margin-left: auto;
         margin-right: auto;
     
             img {
                 width: 100%;
-                // padding-top: 2rem;
+            
             }
         }
 }
@@ -441,9 +461,25 @@
 
 
 
+#smallerImage{
+    width: 45%;
+}
+
+
+
 #video{
-    width: 40%;
+    width: 45%;
+    padding: 2% 2%;
+    margin-left: 55%;
+
+    @include lgxldown{
+        margin-left: 30%;
+        margin-right: auto;
     
+        }
+
+
+
 }
 
 
