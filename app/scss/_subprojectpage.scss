@@ -7,7 +7,7 @@
     &__flex {
 
         display: flex;
-        justify-content: center;
+        justify-content: left;
         margin: 2rem;
         max-width: 1600px;
         background-color: $darkGray;
@@ -37,6 +37,7 @@
         
         @include mdup {
             max-width: 80%;
+            margin-left: 5%;
         }
 
         @include lgxldown {
@@ -398,6 +399,7 @@
                 // padding-top: 2rem;
             }
         }
+
 }
 
 
@@ -407,7 +409,7 @@
 
 
     &__image2 {
-        display: block;
+        display: flex;
         background-color: $darkGray0;
         justify-content: center;
         // padding: 2% 2%;
@@ -431,8 +433,93 @@
     }
 
 
+
+    #video {
+        background-color: $darkGray0;  
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    
+        @include mdup {
+            width: 50%;
+            }
+        
+            @include lgxldown {
+                width: 52%;
+            }
+        
+            @include mddown {
+                width: 55%;
+            }
+
+
+        }
+
+
+
+
     #centeredimage {
         background-color: $darkGray0;       
+    }
+
+
+
+    #oneCenteredimage{
+        background-color: $darkGray0;       
+        margin-left: auto;
+        margin-right: auto;
+
+        @include mdup {
+            width: 24%;
+            // width: 46.9%;
+            }
+        
+            @include lgxldown {
+                width: 35%;
+            }
+        
+            @include mddown {
+                width: 38%;
+            }
+    }
+
+
+    #twoCenteredimage{
+        background-color: $darkGray0;       
+        margin-left: auto;
+        margin-right: auto;
+
+        @include mdup {
+            width: 50%;
+            // width: 46.9%;
+            }
+        
+            @include lgxldown {
+                width: 70%;
+            }
+        
+            @include mddown {
+                width: 75%;
+            }
+    }
+
+    #threeCenteredimage{
+        background-color: $darkGray0;       
+        width: 71.5%;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include mdup {
+            width: 71.5%;
+            }
+        
+            @include lgxldown {
+                width: 75%;
+            }
+        
+            @include mddown {
+                width: 85%;
+            }
     }
 
 
@@ -443,9 +530,14 @@
 
 #iPad{
     background-color: $darkGray0;     
-    width: 75%;
+    width: 65%;
     margin-left: auto;
     margin-right: auto;
+
+@include lgxldown {
+    width: 95%;
+    }
+
 }
 
 

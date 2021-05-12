@@ -296,7 +296,10 @@ a, a:visited, a:hover {
 
 .hero {
   background-color: #141414;
-  min-height: 70vh;
+}
+
+.hero #companies {
+  min-height: 10vh;
 }
 
 .hero__text {
@@ -343,6 +346,7 @@ a, a:visited, a:hover {
   line-height: 1.5;
   max-width: 50rem;
   margin: 0rem auto;
+  margin-bottom: 50vh;
 }
 
 .hero__text p mark.yellow {
@@ -717,7 +721,6 @@ a, a:visited, a:hover {
   margin-bottom: 0rem;
   padding-top: 10rem;
   padding-bottom: 1rem;
-  width: 150%;
 }
 
 @media (min-width: 769px) {
@@ -748,7 +751,6 @@ a, a:visited, a:hover {
   font-weight: 400;
   margin-bottom: 2rem;
   line-height: 1.15;
-  width: 150%;
 }
 
 @media (min-width: 769px) {
@@ -861,13 +863,16 @@ a, a:visited, a:hover {
 @media (max-width: 1259px) {
   .projectpagebody__text {
     margin: 1rem 2rem 2rem;
+    padding: 0;
     max-width: 80%;
   }
 }
 
 @media (max-width: 768px) {
   .projectpagebody__text {
-    max-width: 80%;
+    max-width: 100%;
+    padding: 0;
+    margin: 1rem 1.5rem 2rem;
   }
 }
 
@@ -949,6 +954,7 @@ a, a:visited, a:hover {
 
 .projectpagebody__text ul {
   list-style-position: outside;
+  padding-left: 1rem;
   font-weight: 200;
   line-height: 1.5;
   color: #cccccc;
@@ -1062,7 +1068,6 @@ a, a:visited, a:hover {
 @media (max-width: 768px) {
   .projectpagebody .Button {
     font-size: 1rem;
-    margin-bottom: 1rem;
   }
 }
 
@@ -1149,7 +1154,7 @@ a, a:visited, a:hover {
 
 .projectpagebody__image {
   display: block;
-  padding: 2% 2%;
+  padding: 3% 2%;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -1168,6 +1173,44 @@ a, a:visited, a:hover {
   }
 }
 
+.projectpagebody__image video {
+  width: 100%;
+  height: auto;
+  padding: 3% 2%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@media (max-width: 1259px) {
+  .projectpagebody__image video {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.projectpagebody #twoCenteredimage {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 769px) {
+  .projectpagebody #twoCenteredimage {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1259px) {
+  .projectpagebody #twoCenteredimage {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .projectpagebody #twoCenteredimage {
+    width: 75%;
+  }
+}
+
 .projectpagebody #smallerImage {
   width: 45%;
 }
@@ -1182,6 +1225,22 @@ a, a:visited, a:hover {
   .projectpagebody #video {
     margin-left: 30%;
     margin-right: auto;
+  }
+}
+
+.projectpagebody #iPad {
+  width: 55%;
+}
+
+@media (max-width: 1259px) {
+  .projectpagebody #iPad {
+    width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  .projectpagebody #iPad {
+    width: 95%;
   }
 }
 
@@ -1463,9 +1522,9 @@ a, a:visited, a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   margin: 2rem;
   max-width: 1600px;
   background-color: #242424;
@@ -1500,6 +1559,7 @@ a, a:visited, a:hover {
 @media (min-width: 769px) {
   .subprojectpage #topsection {
     max-width: 80%;
+    margin-left: 5%;
   }
 }
 
@@ -1798,7 +1858,9 @@ a, a:visited, a:hover {
 }
 
 .subprojectpage__image2 {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #141414;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1827,8 +1889,106 @@ a, a:visited, a:hover {
   }
 }
 
+.subprojectpage #video {
+  background-color: #141414;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 769px) {
+  .subprojectpage #video {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1259px) {
+  .subprojectpage #video {
+    width: 52%;
+  }
+}
+
+@media (max-width: 768px) {
+  .subprojectpage #video {
+    width: 55%;
+  }
+}
+
 .subprojectpage #centeredimage {
   background-color: #141414;
+}
+
+.subprojectpage #oneCenteredimage {
+  background-color: #141414;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 769px) {
+  .subprojectpage #oneCenteredimage {
+    width: 24%;
+  }
+}
+
+@media (max-width: 1259px) {
+  .subprojectpage #oneCenteredimage {
+    width: 35%;
+  }
+}
+
+@media (max-width: 768px) {
+  .subprojectpage #oneCenteredimage {
+    width: 38%;
+  }
+}
+
+.subprojectpage #twoCenteredimage {
+  background-color: #141414;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 769px) {
+  .subprojectpage #twoCenteredimage {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1259px) {
+  .subprojectpage #twoCenteredimage {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .subprojectpage #twoCenteredimage {
+    width: 75%;
+  }
+}
+
+.subprojectpage #threeCenteredimage {
+  background-color: #141414;
+  width: 71.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 769px) {
+  .subprojectpage #threeCenteredimage {
+    width: 71.5%;
+  }
+}
+
+@media (max-width: 1259px) {
+  .subprojectpage #threeCenteredimage {
+    width: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  .subprojectpage #threeCenteredimage {
+    width: 85%;
+  }
 }
 
 .subprojectpage #lightbackgroundimage {
@@ -1837,9 +1997,15 @@ a, a:visited, a:hover {
 
 .subprojectpage #iPad {
   background-color: #141414;
-  width: 75%;
+  width: 65%;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (max-width: 1259px) {
+  .subprojectpage #iPad {
+    width: 95%;
+  }
 }
 
 .subprojectpage #smallerImage {
