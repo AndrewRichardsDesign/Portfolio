@@ -90,7 +90,7 @@ USAA - AppX
 </h2>
 
 <p>
-  Placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder.
+  The challenge for iPad was to create a system of structures, viewtypes, and interactions optimized for the platform that could integrate the iOS design and accommodate all of the additional experiences plugging into the space, like Search, Chat, Profile, transfer, etc.
 
 </p>
 
@@ -112,11 +112,15 @@ USAA - AppX
 <div class="subprojectpage__text" id="topsection">
 
 <h1>
-Default Screen
+The Structure and Default View
 </h1>
 
 <p>
-    Placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder.
+After trying fullscreen and sidebar layouts, we decided on a split view and tab bar structure because of the efficient use of space and familiarity with other platforms. Each column scrolls independently, as you would expect from an iPad app.
+</p>
+
+<p>
+  By default, Home loads in the left column and the first account or policy in the list loads in the right column. Home and summary pages, normally two levels in iOS and Android, can exist at the same level on iPad. Accounts or policies currently displaying set their corresponding table cell on the left to a selected state.
 </p>
 
 </div>
@@ -147,12 +151,16 @@ Default Screen
       <div class="subprojectpage__text" id="topsection">
       
       <h1>
-Fullscreen Interaction
+      Fullscreen Interaction
       </h1>
       
       <p>
-        Placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder.
-    </p>
+      The need for the right column to toggle between fullscreen and splitview existed in the previous iPad app, but had one big interaction design issue. At the first level, members could choose between fullscreen and splitview and their option to toggle was replaced by a back button, eliminating their ability to choose between the two views at any point below the first level.
+      </p>
+
+      <p>
+      Our redesign provides a persistent view toggle that exists alongside back navigation. The following screens show a member entering fullscreen mode, navigating to a  second level transaction page, then exiting fullscreen mode while at that second level.
+      </p>
       
       </div>
       </div>
@@ -195,7 +203,11 @@ Modal Views
       </h1>
       
       <p>
-        Placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder.
+There were many iterations on the best way to display views like Transfer, Send, Add account, all of which were custom solutions that challenged the standard Apple interaction pattern.
+    </p>
+
+    <p>
+      Ultimately, we decided to embrace platform conventions and use the SwiftUI modal component. We used SwiftUI modals specifically because of a development goal to move away from UIKit wherever possible, so form and page sheets were eliminated.
     </p>
       
       </div>
