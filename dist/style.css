@@ -1522,9 +1522,9 @@ a, a:visited, a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   margin: 2rem;
   max-width: 1600px;
   background-color: #242424;
@@ -1559,6 +1559,7 @@ a, a:visited, a:hover {
 @media (min-width: 769px) {
   .subprojectpage #topsection {
     max-width: 80%;
+    margin-left: 5%;
   }
 }
 
@@ -1888,6 +1889,30 @@ a, a:visited, a:hover {
 
 .subprojectpage #centeredimage {
   background-color: #141414;
+}
+
+.subprojectpage #oneCenteredimage {
+  background-color: #141414;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 769px) {
+  .subprojectpage #oneCenteredimage {
+    width: 24%;
+  }
+}
+
+@media (max-width: 1259px) {
+  .subprojectpage #oneCenteredimage {
+    width: 35%;
+  }
+}
+
+@media (max-width: 768px) {
+  .subprojectpage #oneCenteredimage {
+    width: 38%;
+  }
 }
 
 .subprojectpage #twoCenteredimage {
