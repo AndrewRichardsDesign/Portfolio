@@ -437,9 +437,21 @@
 
     #twoCenteredimage{
         background-color: $darkGray0;       
-        width: 46.9%;
         margin-left: auto;
         margin-right: auto;
+
+        @include mdup {
+            width: 50%;
+            // width: 46.9%;
+            }
+        
+            @include lgxldown {
+                width: 70%;
+            }
+        
+            @include mddown {
+                width: 75%;
+            }
     }
 
     #threeCenteredimage{
@@ -447,6 +459,18 @@
         width: 71.5%;
         margin-left: auto;
         margin-right: auto;
+
+        @include mdup {
+            width: 71.5%;
+            }
+        
+            @include lgxldown {
+                width: 75%;
+            }
+        
+            @include mddown {
+                width: 85%;
+            }
     }
 
 
@@ -457,9 +481,14 @@
 
 #iPad{
     background-color: $darkGray0;     
-    width: 75%;
+    width: 65%;
     margin-left: auto;
     margin-right: auto;
+
+@include lgxldown {
+    width: 95%;
+    }
+
 }
 
 

@@ -2,7 +2,10 @@
 
 
 .projectpagebody {
+
     
+   
+
 
     &__flex {
 
@@ -10,7 +13,6 @@
         margin: 2rem;
         max-width: 1600px;
         justify-content: space-between;
-        // background-color: $darkGray1;
         background-color: $darkGray;
         border-radius: 2px;
         // box-shadow: inset 1px 0 0 0 $blue;
@@ -27,13 +29,9 @@
         @include mddown {
             margin: 1rem;
         } 
-        
-
-
     }
 
 
-    
 
 
     &__flex2 {
@@ -61,18 +59,6 @@
 
 
     &__text {
-        // font-family: 'Poppins', sans-serif;
-        // color: white;
-        // margin-left: 4rem;
-        // margin-right: 4rem;
-        // margin-top: auto;
-        // margin-bottom: auto;
-
-        // @include lgxldown {
-        //     margin-top: 5rem;
-        //     margin-bottom: 5rem;
-        // }
-
         font-family: 'Poppins', sans-serif;
         line-height: 1.5;
         color: white;
@@ -88,20 +74,19 @@
 
         @include lgxldown {
             margin: 1rem 2rem 2rem;
+            padding: 0;
             max-width: 80%;
         }
 
         @include mddown {
-            max-width: 80%;
+            max-width: 100%;
+            padding: 0;
+            margin: 1rem 1.5rem 2rem;
+            
         }
 
 
         h1 {
-        // font-weight: 400;
-        // font-size: 2rem;
-        // line-height: 1.15;
-        // font-weight: 500;
-
         font-weight: 400;
         font-size: 3rem;
         line-height: 1.15;
@@ -124,12 +109,6 @@
         }
 
         h2 {
-        // font-weight: 200;
-        // margin-bottom: 2rem;
-        // font-size: 1.125rem;
-        // line-height: 1.15;
-        // color: white;
- 
         font-weight: 300;
         line-height: 1.15;
         color: $gray;
@@ -151,10 +130,6 @@
         }
 
         p {
-        // font-size: 1.125rem;
-        // font-weight: 200;
-        // line-height: 1.5;
-        // color: white;
         font-weight: 300;
         line-height: 1.5;
         color: $gray;
@@ -179,9 +154,8 @@
     
 
     ul {
-        // font-size: 1.125rem;
-        // margin: 3rem 10rem;
         list-style-position: outside;
+        padding-left: 1rem;
         font-weight: 200;
         line-height: 1.5;
         color: $gray;
@@ -206,6 +180,9 @@
       li{
         margin-bottom: 1rem;
       }
+
+
+
 
     }
 
@@ -264,30 +241,6 @@
 
 
 
-//    &__title {
-//     font-weight: 400;
-//     font-size: 3rem;
-//     line-height: 1.15;
-//     margin-bottom: 1rem;
-
-//     @include lgdown {
-//         margin-top: 1rem;
-//     }
-
-//    }
-
-
-//    &__description { 
-//     font-size: 1.125rem;
-//     font-weight: 400;
-//     line-height: 1.5;
-//     margin-bottom: 2rem;
-//     max-width: 65rem;
-//     color: $darkGray;
-//    }
-
-
-
 
 .Button {
     border-radius: 8px;
@@ -310,7 +263,7 @@
 
     @include mddown {
         font-size: 1rem;
-        margin-bottom: 1rem;
+        // margin-bottom: 1rem;
     }
     
 }
@@ -438,7 +391,7 @@
 
 &__image {
     display: block;
-    padding: 2% 2%;
+    padding: 3% 2%;
     margin-top: auto;
     margin-bottom: auto;    
 
@@ -456,9 +409,44 @@
             
             }
         }
+
+
+        video {
+            width: 100%;
+            height: auto;
+            padding: 3% 2%;
+            margin-top: auto;
+            margin-bottom: auto;  
+        
+            @include lgxldown{
+            margin-left: auto;
+            margin-right: auto;
+        
+            }
+            }
+
+
+
 }
 
 
+#twoCenteredimage{
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mdup {
+        width: 50%;
+        // width: 46.9%;
+        }
+    
+        @include lgxldown {
+            width: 70%;
+        }
+    
+        @include mddown {
+            width: 75%;
+        }
+}
 
 
 #smallerImage{
@@ -477,11 +465,22 @@
         margin-right: auto;
     
         }
-
-
-
 }
 
+
+
+#iPad{
+    width: 55%;
+
+@include lgxldown {
+    width: 85%;
+    }
+
+    @include mddown {
+        width: 95%;
+        }
+
+}
 
 
 // for images on project sub pages
