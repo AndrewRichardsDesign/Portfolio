@@ -569,6 +569,28 @@
     }
 
 
+    #wideCenteredimage{
+        background-color: $darkGray0;       
+        margin: 0rem 2% 1rem;
+        margin-left: auto;
+        margin-right: auto;
+
+
+        @include mdup {
+            width: 95%;
+            
+            }
+        
+            @include lgxldown {
+                width: 95%;
+            }
+        
+            @include mddown {
+                width: 95%;
+            }
+    }
+
+
     #lightbackgroundimage {
         background-color: $white;       
         // height: 85vh;

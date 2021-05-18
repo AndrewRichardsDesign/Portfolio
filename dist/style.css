@@ -2041,6 +2041,31 @@ a, a:visited, a:hover {
   }
 }
 
+.subprojectpage #wideCenteredimage {
+  background-color: #141414;
+  margin: 0rem 2% 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 769px) {
+  .subprojectpage #wideCenteredimage {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1259px) {
+  .subprojectpage #wideCenteredimage {
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .subprojectpage #wideCenteredimage {
+    width: 95%;
+  }
+}
+
 .subprojectpage #lightbackgroundimage {
   background-color: white;
 }
