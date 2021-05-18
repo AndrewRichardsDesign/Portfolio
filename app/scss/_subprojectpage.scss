@@ -32,23 +32,22 @@
 
     iframe{
         background-color: $darkGray0;
-        margin-top: 3rem;
         margin-bottom: 0;
         overflow:hidden;
         margin-left: auto;
         margin-right: auto;
          
         @include mdup {
-            margin-top: 3rem;
+            margin-top: 3.5rem;
         }
 
         @include lgxldown {
-            margin-top: 3rem;
+            margin-top: 3.5rem;
             
         }
 
         @include mddown {
-            margin-top: 5rem;
+            margin-top: 6rem;
         }
 
         }
@@ -566,6 +565,28 @@
         
             @include mddown {
                 width: 85%;
+            }
+    }
+
+
+    #wideCenteredimage{
+        background-color: $darkGray0;       
+        margin: 0rem 2% 1rem;
+        margin-left: auto;
+        margin-right: auto;
+
+
+        @include mdup {
+            width: 95%;
+            
+            }
+        
+            @include lgxldown {
+                width: 95%;
+            }
+        
+            @include mddown {
+                width: 95%;
             }
     }
 

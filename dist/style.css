@@ -217,7 +217,7 @@ a, a:visited, a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  max-width: 1700px;
+  max-width: 1900px;
   position: fixed;
   top: 0;
   left: 0;
@@ -1552,7 +1552,6 @@ a, a:visited, a:hover {
 
 .subprojectpage iframe {
   background-color: #141414;
-  margin-top: 3rem;
   margin-bottom: 0;
   overflow: hidden;
   margin-left: auto;
@@ -1561,19 +1560,19 @@ a, a:visited, a:hover {
 
 @media (min-width: 769px) {
   .subprojectpage iframe {
-    margin-top: 3rem;
+    margin-top: 3.5rem;
   }
 }
 
 @media (max-width: 1259px) {
   .subprojectpage iframe {
-    margin-top: 3rem;
+    margin-top: 3.5rem;
   }
 }
 
 @media (max-width: 768px) {
   .subprojectpage iframe {
-    margin-top: 5rem;
+    margin-top: 6rem;
   }
 }
 
@@ -2039,6 +2038,31 @@ a, a:visited, a:hover {
 @media (max-width: 768px) {
   .subprojectpage #threeCenteredimage {
     width: 85%;
+  }
+}
+
+.subprojectpage #wideCenteredimage {
+  background-color: #141414;
+  margin: 0rem 2% 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 769px) {
+  .subprojectpage #wideCenteredimage {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1259px) {
+  .subprojectpage #wideCenteredimage {
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .subprojectpage #wideCenteredimage {
+    width: 95%;
   }
 }
 
