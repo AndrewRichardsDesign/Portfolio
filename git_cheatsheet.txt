@@ -75,3 +75,20 @@ git push origin HEAD
 
 ls --- show list of folder
 rm -rf (name of folder)  --- this deletes the targeted folder
+
+
+
+
+
+access
+
+AuthType Basic
+AuthName "Password Protected Area"
+AuthUserFile /Users/andrewrichards/Desktop/my_portfolio/.htpassword
+Require valid-user
+
+
+
+
+Password
+

@@ -13,9 +13,9 @@
         margin: 2rem;
         max-width: 1600px;
         justify-content: space-between;
-        background-color: $darkGray;
+        // background-color: $darkGray;
         border-radius: 2px;
-        // box-shadow: inset 1px 0 0 0 $blue;
+        box-shadow: 0px 0px 0px 4px $darkGray5;
 
 
         @include xxxl {
@@ -192,6 +192,7 @@
        margin: 0rem auto 2rem;
        background-color: $darkGray0;
        justify-content: center;
+       box-shadow: none;
 
     
        @include mdup {
@@ -214,6 +215,7 @@
     background-color: $darkGray0;
     justify-content: center;
     margin: 5rem auto 2rem;
+    box-shadow: none;
     
     @include mdup {
         max-width: 70%;
@@ -234,6 +236,7 @@
 
    #endofsection{
        margin-bottom: 5rem;
+       box-shadow: none;
    }
 
 
@@ -244,10 +247,12 @@
 
 .Button {
     border-radius: 8px;
-    box-shadow: 0px 0px 0px 2px $gray inset;
+    // box-shadow: 0px 0px 0px 2px $gray inset;
+    box-shadow: 0px 0px 0px 2px $blue inset;
     margin-top: 2rem;
     cursor: pointer;
-    color:$gray;            
+    // color:$gray;       
+    color:$blue;            
     display:inline-block;
     padding:16px 32px;
     font-family: 'Poppins', sans-serif;

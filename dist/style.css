@@ -809,8 +809,9 @@ a, a:visited, a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #242424;
   border-radius: 2px;
+  -webkit-box-shadow: 0px 0px 0px 4px #333333;
+          box-shadow: 0px 0px 0px 4px #333333;
 }
 
 @media (min-width: 1700px) {
@@ -990,6 +991,8 @@ a, a:visited, a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 @media (min-width: 769px) {
@@ -1016,6 +1019,8 @@ a, a:visited, a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 5rem auto 2rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 @media (min-width: 769px) {
@@ -1038,15 +1043,17 @@ a, a:visited, a:hover {
 
 .projectpagebody #endofsection {
   margin-bottom: 5rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .projectpagebody .Button {
   border-radius: 8px;
-  -webkit-box-shadow: 0px 0px 0px 2px #cccccc inset;
-          box-shadow: 0px 0px 0px 2px #cccccc inset;
+  -webkit-box-shadow: 0px 0px 0px 2px #6a80fb inset;
+          box-shadow: 0px 0px 0px 2px #6a80fb inset;
   margin-top: 2rem;
   cursor: pointer;
-  color: #cccccc;
+  color: #6a80fb;
   display: inline-block;
   padding: 16px 32px;
   font-family: 'Poppins', sans-serif;
@@ -1477,10 +1484,10 @@ a, a:visited, a:hover {
 
 .homepageProjects .Button {
   border-radius: 8px;
-  -webkit-box-shadow: 0px 0px 0px 2px #cccccc inset;
-          box-shadow: 0px 0px 0px 2px #cccccc inset;
+  -webkit-box-shadow: 0px 0px 0px 2px #6a80fb inset;
+          box-shadow: 0px 0px 0px 2px #6a80fb inset;
   cursor: pointer;
-  color: #cccccc;
+  color: #6a80fb;
   display: inline-block;
   padding: 16px 32px;
   font-family: 'Poppins', sans-serif;
