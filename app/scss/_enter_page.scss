@@ -1,0 +1,103 @@
+body{
+    background-color: $darkGray;
+}
+
+
+
+
+.enterPage {
+
+    
+
+    &__flex {
+        
+        display: flex;
+        margin: 40vh auto;
+        max-width: 1600px;
+        justify-content: center;
+        
+    }
+
+
+
+    &__text {
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.5;
+        color: white;
+        padding: 3% 0;
+        margin-left: 3rem;
+        margin-right: 4rem;
+        margin-top: auto;
+        margin-bottom: auto;
+        // margin-top: min(3%);
+        // margin-bottom: min(3%);
+        max-width: 33%;
+        
+
+        @include lgxldown {
+            margin: 1rem 2rem 2rem;
+            padding: 0;
+            max-width: 80%;
+        }
+
+        @include mddown {
+            max-width: 100%;
+            padding: 0;
+            margin: 1rem 1.5rem 2rem;
+            
+        }
+
+    }
+
+
+
+
+    .Button {
+        background-color: $blue;
+        border-radius: 8px;
+        box-shadow: 0px 0px 0px 2px $blue inset;
+        margin-top: 2rem;
+        cursor: pointer;
+        // color:$gray;       
+        color:$white;            
+        display:inline-block;
+        padding:16px 70px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        
+        @include mdup {
+            font-size: 1.25rem;
+        }
+    
+        @include lgxldown {
+            font-size: 1.25rem;
+        }
+    
+        @include mddown {
+            font-size: 1rem;
+            // margin-bottom: 1rem;
+        }
+        
+    }
+    
+    .Button:hover {
+        background-color: $blue2;
+        box-shadow: 0px 0px 0px 2px $blue2 inset;
+        color: $white;
+        
+    }
+    
+    .Button:active {
+        background-color: $blue2;
+        box-shadow: 0px 0px 0px 2px $blue2 inset;
+        
+    }
+
+
+
+
+
+
+
+
+}
