@@ -4,18 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Prompt:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+  
     <title>Password Protected Page</title>
     <style>
+
+
+
+
+
         html, body {
             margin: 0;
             width: 100%;
             height: 100%;
-            font-family: Arial, Helvetica, sans-serif;
+            /* font-family: Arial, Helvetica, sans-serif; */
+            font-family: 'Poppins', sans-serif;
         }
         #dialogText {
             padding: 10px 30px;
             color: white;
-            background-color: #333333;
+            background-color: hsl(0, 0%, 8%);
         }
         
         #dialogWrap {
@@ -25,7 +34,7 @@
             width: 100%;
             height: 100%;
             display: table;
-            background-color: #EEEEEE;
+            background-color: hsl(0, 0%, 8%);
         }
         
         #dialogWrapCell {
@@ -37,9 +46,12 @@
         #mainDialog {
             max-width: 400px;
             margin: 5px;
-            border: solid #AAAAAA 1px;
-            border-radius: 10px;
-            box-shadow: 3px 3px 5px 3px #AAAAAA;
+            
+            /* border-radius: 2px; */
+            /* box-shadow: 0px 0px 0px 2px hsl(231, 95%, 70%); */
+
+            /* border: solid #AAAAAA 1px; */
+            /* box-shadow: 3px 3px 5px 3px #AAAAAA; */
             margin-left: auto;
             margin-right: auto;
             background-color: #FFFFFF;
@@ -48,15 +60,28 @@
         }
         #passArea {
             padding: 20px 30px;
-            background-color: white;
+            background-color: hsl(0, 0%, 8%);
+            /* background-color: white; */
         }
         #passArea > * {
             margin: 5px auto;
+            color: white;
+            font-weight: 400;
+            font-size: 1.25rem;
+            
         }
         #pass {
             width: 100%;
-            height: 40px;
+            height: 50px;
             font-size: 30px;
+            background-color: hsl(0, 0%, 8%);
+            caret-color: hsl(41, 100%, 50%);
+            color: white;
+            border: none;
+            border-bottom: 1px solid hsl(231, 95%, 70%);
+            outline: none;
+
+            
         }
         
         #messageWrapper {
@@ -67,23 +92,49 @@
         
         .notifyText {
             display: none;
+            font-weight: 200;
+
         }
         
         #invalidPass {
-            color: red;
+            color: hsl(7, 84%, 48%);
         }
         
         #success {
-            color: green;
+            color: hsl(150, 100%, 35%);
         }
         
         #submitPass {
-            font-size: 20px;
-            border-radius: 5px;
-            background-color: #E7E7E7;
-            border: solid gray 1px;
+            /* font-size: 20px; */
+            /* border-radius: 5px; */
+            margin-top: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0px 0px 0px 2px hsl(231, 95%, 70%);
+            cursor: pointer;
+            color:hsl(231, 95%, 70%);            
             float: right;
+            padding:10px 24px;
+            font-weight: 300;
+            background-color: hsl(0, 0%, 8%);
+            border: none;
+            
+            font-size: 1.25rem;
+
         }
+
+            #submitPass:hover {
+            background-color: hsl(231, 95%, 70%);
+            box-shadow: 0px 0px 0px 2px hsl(231, 95%, 70%);
+            color: hsl(0, 0%, 100%);
+            }
+
+            #submitPass:active {
+            background-color: hsl(231, 95%, 65%);
+            box-shadow: 0px 0px 0px 2px hsl(231, 95%, 65%);
+        
+            }
+
+
         #contentFrame {
             position: absolute;
             top: 0;
@@ -111,14 +162,14 @@
     <div id="dialogWrap">
         <div id="dialogWrapCell">
             <div id="mainDialog">
-                <div id="dialogText">This page is password protected.</div>
+                <!-- <div id="dialogText">This page is password protected.</div> -->
                 <div id="passArea">
-                    <p id="passwordPrompt">Password</p>
+                    <p id="passwordPrompt">Enter password</p>
                     <input id="pass" type="password" name="pass" autofocus>
                     <div>
                         <span id="messageWrapper">
-                            <span id="invalidPass" class="notifyText">Sorry, please try again.</span>
-                            <span id="success" class="notifyText">Success!</span>
+                            <span id="invalidPass" class="notifyText">so close...</span>
+                            <span id="success" class="notifyText">who told you?</span>
                             &nbsp;
                         </span>
                         <button id="submitPass" type="button">Submit</button>
@@ -128,9 +179,9 @@
             </div>
         </div>
     </div>
-    <div id="attribution">
+    <!-- <div id="attribution">
         Protected by <a href="https://www.maxlaumeister.com/pagecrypt/">PageCrypt</a>
-    </div>
+    </div> -->
     <script>
 /*
 CryptoJS v3.1.2
@@ -264,7 +315,7 @@ a[0]++}h.sigBytes=4*c;return h}});g.PBKDF2=function(d,b,e){return n.create(e).co
         }( this, this.document ));
     </script>
     <script>
-        var pl = {"salt":"bySvNg0U2Z9EONrR5v923Pf39X3EreljjUgRP/lGDcI=","iv":"y+BJJ7ROqyjFzV5b7P7wQQ==","data":"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"};
+        var pl = {"salt":"Hpid4T24FuA+Zo46eRba9cU4YQRxa0maFzsLRs8WOVI=","iv":"1ETkGEC9WkuXNsOyupaQ2g==","data":"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"};
         
         var submitPass = document.getElementById('submitPass');
         var passEl = document.getElementById('pass');

@@ -1270,13 +1270,13 @@ a, a:visited, a:hover {
 }
 
 .message {
-  background-color: white;
+  background-color: #242424;
   min-height: 100vh;
 }
 
 .message__text {
   opacity: 1;
-  color: #242424;
+  color: white;
   text-align: center;
 }
 
@@ -2192,5 +2192,93 @@ a, a:visited, a:hover {
     font-size: 1rem;
     width: 85%;
   }
+}
+
+body {
+  background-color: #242424;
+}
+
+.enterPage__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 40vh auto;
+  max-width: 1600px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.enterPage__text {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  color: white;
+  padding: 3% 0;
+  margin-left: 3rem;
+  margin-right: 4rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  max-width: 33%;
+}
+
+@media (max-width: 1259px) {
+  .enterPage__text {
+    margin: 1rem 2rem 2rem;
+    padding: 0;
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .enterPage__text {
+    max-width: 100%;
+    padding: 0;
+    margin: 1rem 1.5rem 2rem;
+  }
+}
+
+.enterPage .Button {
+  background-color: #6a80fb;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 0px 2px #6a80fb inset;
+          box-shadow: 0px 0px 0px 2px #6a80fb inset;
+  margin-top: 2rem;
+  cursor: pointer;
+  color: white;
+  display: inline-block;
+  padding: 16px 70px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+@media (min-width: 769px) {
+  .enterPage .Button {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 1259px) {
+  .enterPage .Button {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .enterPage .Button {
+    font-size: 1rem;
+  }
+}
+
+.enterPage .Button:hover {
+  background-color: #516afb;
+  -webkit-box-shadow: 0px 0px 0px 2px #516afb inset;
+          box-shadow: 0px 0px 0px 2px #516afb inset;
+  color: white;
+}
+
+.enterPage .Button:active {
+  background-color: #516afb;
+  -webkit-box-shadow: 0px 0px 0px 2px #516afb inset;
+          box-shadow: 0px 0px 0px 2px #516afb inset;
 }
 /*# sourceMappingURL=style.css.map */
