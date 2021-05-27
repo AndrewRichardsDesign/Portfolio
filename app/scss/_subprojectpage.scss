@@ -78,11 +78,23 @@
     }
 
 
-   #centered{
+   #centeredAbove{
+    margin-top: 1rem;
+    margin-bottom: 0rem;
     background-color: $darkGray0; 
     justify-content: center;
    }
 
+
+   #centeredBelow{
+    margin-top: 0rem;
+    padding-top: 0rem;
+    margin-bottom: 1rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: $darkGray0; 
+    justify-content: center;
+   }
 
 
 
