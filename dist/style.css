@@ -1609,7 +1609,21 @@ a, a:visited, a:hover {
   }
 }
 
-.subprojectpage #centered {
+.subprojectpage #centeredAbove {
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+  background-color: #141414;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.subprojectpage #centeredBelow {
+  margin-top: 0rem;
+  padding-top: 0rem;
+  margin-bottom: 1rem;
+  margin-left: 10%;
+  margin-right: 10%;
   background-color: #141414;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
