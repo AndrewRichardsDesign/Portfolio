@@ -1525,6 +1525,36 @@ a, a:visited, a:hover {
           box-shadow: 0px 0px 0px 2px #516afb inset;
 }
 
+.homepageProjects .ButtonInactive {
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 0px 2px #cccccc inset;
+          box-shadow: 0px 0px 0px 2px #cccccc inset;
+  cursor: pointer;
+  color: #cccccc;
+  display: inline-block;
+  padding: 16px 32px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+@media (min-width: 769px) {
+  .homepageProjects .ButtonInactive {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 1259px) {
+  .homepageProjects .ButtonInactive {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .homepageProjects .ButtonInactive {
+    font-size: 1rem;
+  }
+}
+
 .subprojectpage__flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1609,6 +1639,15 @@ a, a:visited, a:hover {
   }
 }
 
+.subprojectpage #centered {
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+  background-color: #141414;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .subprojectpage #centeredAbove {
   margin-top: 1rem;
   margin-bottom: 0rem;
@@ -1628,6 +1667,7 @@ a, a:visited, a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
 }
 
 .subprojectpage #FirstItemTopSection {
